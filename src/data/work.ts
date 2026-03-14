@@ -1,4 +1,4 @@
-import { SelectedWork } from '../../types';
+import { SelectedWork } from '../types';
 
 export const WORK_DATA: SelectedWork[] = [
   {

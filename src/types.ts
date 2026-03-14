@@ -59,7 +59,7 @@ export interface Pet {
   traits: string[];
 }
 
-export type CSSkin = {
+export interface CSSkin {
   id: string;
   name: string;
   weapon?: string;
@@ -68,7 +68,7 @@ export type CSSkin = {
   category?: string;
   caption?: string;
   imageUrl?: string;
-};
+}
 
 export interface WorkPrinciple {
   title: string;

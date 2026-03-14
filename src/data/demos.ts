@@ -1,4 +1,4 @@
-import { GitHubProject } from '../../types';
+import { GitHubProject } from '../types';
 
 export const DEMOS_DATA: GitHubProject[] = [
   {

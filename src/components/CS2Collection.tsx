@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { PERSONAL_DATA, CS_SKINS_DATA, CSSkin } from '../data/personal';
+import { PERSONAL_DATA, CS_SKINS_DATA } from '../data/personal';
+import { CSSkin } from '../types';
 
-export const SkinCard = ({ skin }: { skin: CSSkin }) => (
+export const SkinCard = ({ skin }: { skin: CSSkin; key?: React.Key }) => (
   <div className="min-w-[85vw] md:min-w-0 snap-center group relative bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-6 hover:bg-zinc-900/80 hover:border-zinc-700/50 transition-all duration-500 flex flex-col h-full backdrop-blur-sm">
     <div className="flex justify-between items-start mb-6">
       <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 bg-zinc-950/50 px-3 py-1.5 rounded-full border border-zinc-800/50">
