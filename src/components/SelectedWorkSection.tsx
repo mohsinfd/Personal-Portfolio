@@ -14,12 +14,12 @@ export const SelectedWorkSection = () => (
         {WORK_DATA.map((cs) => (
           <Card key={cs.id} className="group relative overflow-hidden flex flex-col h-full">
             <h3 className="text-2xl font-bold mb-3 font-serif group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors text-zinc-900 dark:text-zinc-100">{cs.title}</h3>
-            <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">{cs.thesis}</p>
+            <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-6 leading-loose">{cs.thesis}</p>
             
             <div className="space-y-4 mb-8 flex-grow">
               <div>
                 <h4 className="text-xs font-bold text-zinc-400 dark:text-zinc-600 uppercase tracking-tighter mb-2">What I did & Why it mattered</h4>
-                <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-2">
+                <ul className="text-sm text-zinc-500 dark:text-zinc-400 space-y-3 leading-relaxed">
                   {cs.bullets.map((a, i) => (
                     <li key={i} className="flex gap-2">
                       <ChevronRight className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />

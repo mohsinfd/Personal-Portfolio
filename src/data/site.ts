@@ -1,5 +1,5 @@
 export const SITE_DATA = {
-  name: "Mohsin Fazal Dingankar",
+  name: "Mohsin Dingankar",
   role: "Product leader building fintech platforms, recommendation engines, and 0→1 product systems.",
   philosophy: "I work best where product, platform, UX, and GTM are still taking shape — especially when the org needs both strategy and someone willing to build the first working version.",
   microLine: "Product leader who still likes building.",

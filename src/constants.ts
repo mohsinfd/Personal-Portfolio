@@ -1,4 +1,4 @@
-export const RESUME_TXT = `MOHSIN FAZAL DINGANKAR
+export const RESUME_TXT = `MOHSIN DINGANKAR
 PRODUCT LEADER | PLATFORMS, 0→1 LAUNCHES, AND AI-NATIVE EXECUTION
 Gurgaon, India | +91 98206 92913 | mohsinfd@gmail.com | linkedin.com/in/mohsindingankar
 

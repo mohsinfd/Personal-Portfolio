@@ -38,8 +38,8 @@ const TimelineItem = ({ experience, index }: { experience: Experience; index: nu
         >
           <div className="pt-4 space-y-3">
             {experience.description.map((bullet, i) => (
-              <div key={i} className="flex gap-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                <ChevronRight className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+              <div key={i} className="flex gap-3 text-sm text-zinc-500 dark:text-zinc-400 leading-loose">
+                <ChevronRight className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-1" />
                 <p>{bullet}</p>
               </div>
             ))}

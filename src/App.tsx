@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import CollectionPage from './CollectionPage';
 import { 
   Github, 
@@ -264,6 +264,8 @@ const PortfolioContent = () => {
 };
 
 export default function Portfolio() {
+  const location = useLocation();
+
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('theme') === 'dark' || 
@@ -271,6 +273,12 @@ export default function Portfolio() {
     }
     return false;
   });
+
+  useEffect(() => {
+    if (location.pathname === '/cs2-collection') {
+      setIsDark(true);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     if (isDark) {
