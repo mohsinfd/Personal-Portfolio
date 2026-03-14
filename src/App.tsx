@@ -28,12 +28,12 @@ import {
   BookOpen,
   ArrowRight
 } from 'lucide-react';
-import { SITE_DATA } from './data/site';
-import { WORK_DATA } from './data/work';
-import { EXPERIENCE_DATA } from './data/experience';
-import { DEMOS_DATA } from './data/demos';
-import { PERSONAL_DATA, CS_SKINS_DATA } from './data/personal';
-import { WRITING_DATA } from './data/writing';
+import { SITE_DATA } from './src/data/site';
+import { WORK_DATA } from './src/data/work';
+import { EXPERIENCE_DATA } from './src/data/experience';
+import { DEMOS_DATA } from './src/data/demos';
+import { PERSONAL_DATA, CS_SKINS_DATA } from './src/data/personal';
+import { WRITING_DATA } from './src/data/writing';
 import { RESUME_TXT } from './constants';
 import { Experience } from './types';
 
