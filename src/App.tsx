@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
 import CollectionPage from './CollectionPage';
 import { 
   Github, 
@@ -265,6 +267,18 @@ const PortfolioContent = () => {
 
 export default function Portfolio() {
   const location = useLocation();
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+    
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {

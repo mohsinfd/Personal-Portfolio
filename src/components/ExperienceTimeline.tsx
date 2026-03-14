@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { Milestone, ChevronRight, ChevronDown } from 'lucide-react';
 import { EXPERIENCE_DATA } from '../data/experience';
@@ -11,7 +11,17 @@ const TimelineItem = ({ experience, index }: { experience: Experience; index: nu
   return (
     <div className="relative pl-8 pb-12 last:pb-0 group">
       <div className="absolute left-0 top-0 bottom-0 w-px bg-zinc-200 dark:bg-zinc-800 group-last:bg-transparent"></div>
-      <div className={`absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-white dark:border-zinc-950 transition-colors ${experience.isCurrent ? 'bg-indigo-600 dark:bg-indigo-400 shadow-[0_0_0_4px_rgba(79,70,229,0.1)] dark:shadow-[0_0_0_4px_rgba(129,140,248,0.1)]' : 'bg-zinc-300 dark:bg-zinc-700'}`}></div>
+      {experience.isCurrent ? (
+        <Fragment>
+          <motion.div 
+            animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className={`absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-white dark:border-zinc-950 bg-indigo-600 dark:bg-indigo-400 shadow-[0_0_0_4px_rgba(79,70,229,0.1)] dark:shadow-[0_0_0_4px_rgba(129,140,248,0.1)]`}
+          ></motion.div>
+        </Fragment>
+      ) : (
+        <div className={`absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-white dark:border-zinc-950 transition-colors bg-zinc-300 dark:bg-zinc-700`}></div>
+      )}
 
       <div 
         className={`cursor-pointer group/item transition-all rounded-2xl p-4 -ml-4 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 ${isOpen ? 'bg-zinc-50 dark:bg-zinc-900/50' : ''}`}
@@ -21,7 +31,15 @@ const TimelineItem = ({ experience, index }: { experience: Experience; index: nu
           <div>
             <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 group-hover/item:text-indigo-600 dark:group-hover/item:text-indigo-400 transition-colors flex items-center gap-2">
               {experience.role}
-              {experience.isCurrent && <span className="text-[10px] bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded-full uppercase tracking-widest font-bold">Current</span>}
+              {experience.isCurrent && (
+                <motion.span 
+                  animate={{ opacity: [0.6, 1, 0.6] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="text-[10px] bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded-full uppercase tracking-widest font-bold"
+                >
+                  Current
+                </motion.span>
+              )}
             </h3>
             <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">{experience.company}</p>
           </div>
