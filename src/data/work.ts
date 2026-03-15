@@ -4,7 +4,7 @@ export const WORK_DATA: SelectedWork[] = [
   {
     id: "bankkaro",
     title: "BankKaro / great.cards",
-    rootProblem: "Card and loan discovery was fragmented, shallow, and too cognitively expensive for users. Most aggregator experiences still depended on content, filters, and thin listing logic.",
+    rootProblem: "Card and loan discovery was fragmented, shallow, and overwhelming for users. Most aggregator experiences still depended on static content, filters, and thin listing logic.",
     productBelief: "The real opportunity was not a better comparison page. It was a platform that combined recommendation logic, lender rails, cashback economics, and partner-ready distribution.",
     built: [
       "API-first platform across cards, loans, calculators, and recommendation flows",

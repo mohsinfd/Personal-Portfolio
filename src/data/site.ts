@@ -1,6 +1,6 @@
 export const SITE_DATA = {
   name: "Mohsin Dingankar",
-  role: "Product leader building fintech platforms, recommendation engines, and 0→1 product systems.",
+  role: "Product leader building fintech platforms, recommendation engines, and foundational 0→1 products.",
   philosophy: "I work best where product, platform, UX, and GTM are still taking shape — especially when the org needs both strategy and someone willing to build the first working version.",
   microLine: "Product leader who still likes building.",
   location: "Gurgaon, India",
@@ -12,7 +12,7 @@ export const SITE_DATA = {
     "19 lenders onboarded",
     "150+ country KYC systems",
     "700M+ loyalty profiles",
-    "0→1 fintech platforms"
+    "Seed-to-scale fintech builds"
   ],
   howIWork: {
     headline: "How I Work",
@@ -27,7 +27,7 @@ export const SITE_DATA = {
         description: "I do not wait for perfect role clarity or perfect resourcing. I move from problem framing to specs to prototypes to launch support when the work demands it. Titles matter less than momentum."
       },
       {
-        title: "APIs before ornament",
+        title: "Contract-first architecture",
         description: "In complex products, clean contracts matter more than visual polish. Docs, data structures, edge cases, and partner rails are part of the product, even when the user never sees them directly."
       },
       {

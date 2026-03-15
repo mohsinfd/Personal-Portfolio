@@ -9,12 +9,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     isCurrent: true,
     category: "Platform Leadership",
     description: [
-      "Took BankKaro and great.cards from 0→1 within ~1 year, owning product strategy, platform design, UX direction, launch readiness, and iteration",
-      "Architected an API-first platform across credit cards, personal loans, recommendation engines, and calculator infrastructure",
-      "Onboarded 19 lenders to the loans platform, including 5 API-based integrations",
-      "Built complex credit-card API journeys with SBI and Axis",
-      "Built AI-led whitelabel frontends to support partner demos and live launches, including Tide",
-      "Helped shift the product org toward AI-assisted prototyping and faster MVP creation"
+      "Leading product strategy and platform engineering for BankKaro, shaping a foundational seed-to-scale fintech build",
+      "Managed the end-to-end design and launch readiness for foundational recommendation systems and lender rails",
+      "Directed the product org's shift toward AI-assisted prototyping, significantly compressing the cycle from concept to partner demo",
+      "Owning the UX and GTM direction for 0→1 products in a high-ambiguity environment"
     ]
   },
   {
@@ -24,11 +22,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Gurgaon",
     category: "Platform Leadership",
     description: [
-      "Led product and analytics across a 12-member team, establishing KPI reviews and experimentation cadence",
-      "Scaled DAUs from 3K to 40K+ in 6 months",
-      "Grew paying users by 300% and improved MoM retention from 25% to 40%",
-      "Shipped a novel real-time fantasy format that increased engagement time from ~40s to ~120s",
-      "Built a B2B computer-vision scoring engine for eSports titles without reliable structured score data"
+      "Led product, design, and analytics across a 12-member team, establishing the organization's first KPI review and experimentation cadence",
+      "Defined the growth and growth-mechanics roadmap that scaled DAUs by 13x in 6 months",
+      "Instituted systematic user-behavior tracking to improve product-market fit and retention benchmarks",
+      "Managed senior stakeholder relations and the long-term product vision for the live eSports ecosystem"
     ]
   },
   {
@@ -38,10 +35,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "",
     category: "Systems & Scale",
     description: [
-      "Owned KYC and conversion journeys at Western Union across 150+ countries",
-      "Built and scaled Artwork Flow from MVP to 12+ enterprise clients before acquisition by Esko",
-      "Worked on internal systems, loyalty products, booking funnels, and enterprise SaaS across multiple categories",
-      "Managed systems serving 700M+ loyalty profiles"
+      "Operated at massive scale, managing the conversion and KYC infrastructure for Western Union across 150+ countries",
+      "Led the Artwork Flow product from MVP to enterprise-ready status, resulting in successful adoption by 12+ marquee clients prior to its acquisition",
+      "Solved complex operational and structural problems for platforms serving 700M+ active loyalty profiles",
+      "Navigated high-compliance and highly-regulated environments to build commercially durable systems"
     ]
   },
   {
@@ -51,9 +48,9 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Mumbai",
     category: "Founder / Builder",
     description: [
-      "Built a seed-funded last-minute hotel deals startup across mobile, web, integrations, supply, and customer operations",
-      "Scaled supply to 200+ hotels across Western India",
-      "Learned the habits that still shape my work: speed, customer proximity, and full ownership of the business model"
+      "Co-founded and scaled a seat-funded last-minute hotel discovery platform across mobile, web, and supply operations",
+      "Managed supply-side growth to 200+ partner hotels while personally leading the customer experience and post-sales workflows",
+      "Established the core habits of speed, deep customer proximity, and absolute accountability for unit economics"
     ]
   }
 ];
