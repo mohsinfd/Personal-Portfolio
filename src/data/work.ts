@@ -4,17 +4,17 @@ export const WORK_DATA: SelectedWork[] = [
   {
     id: "bankkaro",
     title: "BankKaro / great.cards",
-    thesis: "Building a banking platform with cashback, lender rails, and a rupee-accurate recommendation engine.",
-    description: "Took BankKaro and great.cards from 0→1 within ~1 year, shaping the product across loans, cards, APIs, recommendation infrastructure, whitelabel demos, and launch readiness.",
-    bullets: [
-      "Architected an API-first system across credit cards, personal loans, calculators, and recommendation flows",
-      "Onboarded 19 lenders for loans, including 5 API-based integrations",
-      "Built complex credit-card API journeys with SBI and Axis",
-      "Launched great.cards as a rupee-accurate, spend-based decision engine",
-      "Built AI-led whitelabel frontends to create partner-ready demos and reduce the time between first conversation and working proof"
+    rootProblem: "Card and loan discovery was fragmented, shallow, and too cognitively expensive for users. Most aggregator experiences still depended on content, filters, and thin listing logic.",
+    productBelief: "The real opportunity was not a better comparison page. It was a platform that combined recommendation logic, lender rails, cashback economics, and partner-ready distribution.",
+    built: [
+      "API-first platform across cards, loans, calculators, and recommendation flows",
+      "great.cards as a rupee-accurate, spend-based recommendation engine",
+      "category-specific calculators",
+      "SBI and Axis card API journeys",
+      "lender onboarding and API integrations across loans",
+      "AI-led whitelabel frontends for demos and launches"
     ],
-    whyItMattered: "Built the foundation for a consumer-facing recommendation experience and a partner-ready platform model, instead of a one-off aggregator frontend.",
-    tag: "Platform build • fintech rails • AI-native execution",
+    whyItMattered: "This moved the business closer to a platform model: stronger recommendation depth for users, stronger distribution leverage for partners, and a more defensible system than a standard aggregator frontend.",
     links: [
       { label: "great.cards", href: "https://great.cards" },
       { label: "BankKaro", href: "https://bankkaro.com" },
@@ -23,43 +23,41 @@ export const WORK_DATA: SelectedWork[] = [
   {
     id: "fanclash",
     title: "FanClash",
-    thesis: "Turned a fantasy eSports product into a tighter, higher-retention live system.",
-    description: "Led product and analytics across the platform, tightening loops, pushing experimentation cadence, and shipping new mechanics that materially improved engagement and growth.",
-    bullets: [
-      "Scaled DAUs from 3K to 40K+ in 6 months",
-      "Grew paying users by 300%",
-      "Improved MoM retention from 25% to 40%",
-      "Shipped a novel real-time fantasy format that increased engagement time from ~40s to ~120s",
-      "Built a B2B computer-vision scoring engine for eSports titles without reliable structured score data"
+    rootProblem: "Fantasy eSports was still too static, too shallow, and too borrowed from older fantasy formats. Engagement and retention were fragile, and the product was not fully built for the live, dynamic nature of eSports.",
+    productBelief: "The category would only get stronger if the product behaved more like a live system: more reactive, more native to gameplay, and more deeply engaging over time.",
+    built: [
+      "tighter KPI and experimentation cadence",
+      "a novel real-time fantasy format",
+      "stronger engagement and retention loops",
+      "system support for harder-to-structure scoring",
+      "a B2B computer-vision scoring engine for unreliable or missing game data"
     ],
-    whyItMattered: "This was a pure product-systems problem: retention, engagement, monetization, and novelty all had to work together.",
-    tag: "Consumer growth • retention loops • novel mechanics"
+    whyItMattered: "The product became materially stronger on growth and behavior: higher DAUs, better retention, more paying users, and much deeper engagement during play."
   },
   {
     id: "systems-at-scale",
     title: "Systems at Scale",
-    thesis: "Learned how large systems actually behave: regulated flows, loyalty economics, enterprise SaaS, and booking funnels.",
-    description: "Across Western Union, Loylty Rewardz, Artwork Flow, Zolo, and Musafir, I worked on products where compliance, operating reality, or platform scale mattered as much as the UI.",
-    bullets: [
-      "Owned KYC and conversion journeys at Western Union across 150+ countries",
-      "Managed loyalty systems serving 700M+ user profiles",
-      "Built Artwork Flow from MVP to 12+ enterprise clients before acquisition by Esko",
-      "Worked across internal ops systems, consumer booking funnels, and enterprise product surfaces"
+    rootProblem: "At scale, product failure usually doesn't come from flashy feature gaps. It comes from complexity: regulation, fragmented workflows, messy incentives, inconsistent data, and systems that stop holding together under real operational pressure.",
+    productBelief: "If the underlying rails are stronger, the user-facing experience becomes more trustworthy, scalable, and commercially durable.",
+    built: [
+      "KYC and conversion flows across 150+ countries",
+      "loyalty systems operating at 700M+ profile scale",
+      "enterprise SaaS from MVP to real client adoption",
+      "booking and internal systems across multiple product environments"
     ],
-    whyItMattered: "These roles taught me how product decisions hold up under regulation, scale, and operational complexity.",
-    tag: "Regulated systems • enterprise product • scale discipline"
+    whyItMattered: "These roles taught me how product decisions survive contact with real scale, regulation, and operating constraints."
   },
   {
     id: "founder-builder",
     title: "Founder / Builder",
-    thesis: "My founder years taught me the habits I still trust most: speed, ownership, and respect for the business model.",
-    description: "At HotelsAroundYou, I built across product, web, mobile, supply, customer experience, and post-sales operations. It taught me to stay close to users, understand the unit economics, and never outsource ownership.",
-    bullets: [
-      "Built the platform across mobile, web, and integrations",
-      "Scaled supply to 200+ hotels across Western India",
-      "Worked directly across product, ops, partnerships, and customer-facing problems"
+    rootProblem: "Travel discovery and booking were still fragmented, trust-heavy, and operationally messy, especially for time-sensitive hotel decisions.",
+    productBelief: "A tighter, more focused platform could simplify choice and create a better last-minute booking experience.",
+    built: [
+      "product across web, mobile, and integrations",
+      "supply network across 200+ hotels",
+      "customer-facing and post-sales workflows",
+      "commercial and operational problem-solving alongside the CEO"
     ],
-    whyItMattered: "This is where the operating instinct came from: build fast, stay close to the customer, and understand what actually makes the business work.",
-    tag: "Startup grit • full-stack ownership • commercial reality"
+    whyItMattered: "This is where I learned that product is inseparable from business model, ops reality, and customer trust."
   }
 ];

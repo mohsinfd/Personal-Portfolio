@@ -31,11 +31,10 @@ export interface CaseStudyLink {
 export interface SelectedWork {
   id: string;
   title: string;
-  thesis: string;
-  description: string;
-  bullets: string[];
+  rootProblem: string;
+  productBelief: string;
+  built: string[];
   whyItMattered: string;
-  tag: string;
   links?: CaseStudyLink[];
 }
 
