@@ -18,12 +18,12 @@ export const DEMOS_DATA: GitHubProject[] = [
     cta: "View Demo"
   },
   {
-    title: "Loan Journey Prototype",
-    subtitle: "Prequalified lending flow",
-    description: "A working prototype exploring how users move through a prequalified personal-loan journey with clearer expectations and lower friction.",
-    tech: ["React", "JavaScript", "UX Experiment"],
-    repoUrl: "https://github.com/mohsinfd/bankkaro-loan-journey-mock",
-    cta: "View Demo"
+    title: "Statement Intelligence Engine",
+    subtitle: "LLM-based spend parsing and categorization",
+    description: "A working system for extracting transaction data from encrypted credit-card statements, handling bank-specific password formats, classifying spends into useful categories, and turning raw statements into recommendation-ready inputs.",
+    tech: ["Python", "Data Tooling", "Product Prototype"],
+    repoUrl: "https://github.com/mohsinfd/cgincognito",
+    cta: "View Repo"
   },
   {
     title: "Incognito UX Experiment",

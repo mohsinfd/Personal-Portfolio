@@ -9,7 +9,7 @@ export const WritingSection = () => (
       <SectionHeader 
         icon={BookOpen}
         title="Notes on Product and Systems" 
-        subtitle="Thoughts on building, scaling, and the craft of product management."
+        subtitle="A few notes on systems, product judgment, and the difference between what looks solved and what actually is."
       />
       <div className="space-y-6 mt-12">
         {WRITING_DATA.length > 0 ? (

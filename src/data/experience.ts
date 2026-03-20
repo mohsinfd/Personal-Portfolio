@@ -9,10 +9,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     isCurrent: true,
     category: "Platform Leadership",
     description: [
-      "Leading product strategy and platform engineering for BankKaro, shaping a foundational seed-to-scale fintech build",
-      "Managed the end-to-end design and launch readiness for foundational recommendation systems and lender rails",
-      "Directed the product org's shift toward AI-assisted prototyping, significantly compressing the cycle from concept to partner demo",
-      "Owning the UX and GTM direction for 0→1 products in a high-ambiguity environment"
+      "Leading product across BankKaro and great.cards in a phase where the product, platform, and distribution model are all still being built at once",
+      "Working across recommendation systems, lender rails, UX direction, and partner-facing demos rather than treating them as separate problems",
+      "Using AI-assisted prototyping to shorten the distance between concept, working surface, and real conversation",
+      "Operating as a product lead, but often in the more useful sense: helping define the system while still getting into the details"
     ]
   },
   {
@@ -22,10 +22,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Gurgaon",
     category: "Platform Leadership",
     description: [
-      "Led product, design, and analytics across a 12-member team, establishing the organization's first KPI review and experimentation cadence",
-      "Defined the growth and growth-mechanics roadmap that scaled DAUs by 13x in 6 months",
-      "Instituted systematic user-behavior tracking to improve product-market fit and retention benchmarks",
-      "Managed senior stakeholder relations and the long-term product vision for the live eSports ecosystem"
+      "Led product and analytics across a 12-member team during a period where the product needed stronger loops, clearer metrics, and more native gameplay thinking",
+      "Focused the roadmap around engagement, paying-user growth, and retention rather than feature volume",
+      "Helped push the category toward a more live, reactive product model",
+      "Worked closely with senior stakeholders, but stayed close enough to the product to shape the mechanics directly"
     ]
   },
   {
@@ -35,10 +35,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "",
     category: "Systems & Scale",
     description: [
-      "Operated at massive scale, managing the conversion and KYC infrastructure for Western Union across 150+ countries",
-      "Led the Artwork Flow product from MVP to enterprise-ready status, resulting in successful adoption by 12+ marquee clients prior to its acquisition",
-      "Solved complex operational and structural problems for platforms serving 700M+ active loyalty profiles",
-      "Navigated high-compliance and highly-regulated environments to build commercially durable systems"
+      "Worked in environments where product quality depended as much on compliance, internal rails, and operating discipline as on customer-facing UX",
+      "Moved across global money movement, enterprise SaaS, loyalty platforms, internal systems, and booking funnels without losing the systems lens",
+      "Learned how large products break, and how much of the real work is invisible until it fails",
+      "Built in categories where trust, reliability, and structural clarity mattered more than theatre"
     ]
   },
   {
@@ -48,9 +48,9 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Mumbai",
     category: "Founder / Builder",
     description: [
-      "Co-founded and scaled a seat-funded last-minute hotel discovery platform across mobile, web, and supply operations",
-      "Managed supply-side growth to 200+ partner hotels while personally leading the customer experience and post-sales workflows",
-      "Established the core habits of speed, deep customer proximity, and absolute accountability for unit economics"
+      "Built a seed-funded last-minute hotel platform at a stage where product, operations, supply, and customer experience were all tangled together",
+      "Scaled the supply side to 200+ hotels while staying close to the actual operational mess behind the interface",
+      "Learned early that speed is useful, but proximity to users and accountability to the business matter more"
     ]
   }
 ];

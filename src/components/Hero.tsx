@@ -58,42 +58,34 @@ export const Hero = () => (
           </div>
         </motion.div>
 
-        {/* Right Column (Image Placeholder) */}
+        {/* Right Column (What I'm usually doing) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="lg:w-2/5 flex justify-center lg:justify-end w-full max-w-md lg:max-w-none"
+          className="lg:w-2/5 flex justify-center lg:justify-end w-full"
         >
-          <div className="relative w-full aspect-square max-w-[400px]">
-            {/* Decorative ring */}
-            <div className="absolute inset-0 rounded-full border border-zinc-200 dark:border-zinc-800 scale-105" />
-            <div className="absolute inset-0 rounded-full border border-zinc-100 dark:border-zinc-900 scale-110" />
-            
-            {/* Image Container */}
-            <div className="relative w-full h-full rounded-full overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-4 border-white dark:border-zinc-950 shadow-2xl flex items-center justify-center group">
-              {/* Abstract Unsplash Placeholder for "Systems/Fintech" vibe */}
-              <img 
-                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop" 
-                alt="Profile Placeholder"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              {/* Optional overlay text if image fails or to act as a placeholder label
-              <div className="absolute inset-0 flex items-center justify-center bg-zinc-900/40 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-                <span className="font-medium">Update LinkedIn Photo</span>
-              </div> */}
-            </div>
-            
-            {/* Floating Badge */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.5 }}
-              className="absolute -bottom-6 -left-6 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-xl flex items-center gap-3"
-            >
-              <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-              <div className="text-sm font-bold text-zinc-900 dark:text-zinc-100">Building Fintech<br/><span className="text-xs text-zinc-500 font-normal">Available for new roles</span></div>
-            </motion.div>
+          <div className="w-full max-w-md bg-white dark:bg-zinc-900/50 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-xl relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:bg-indigo-500/10 transition-colors" />
+            <h3 className="text-xl font-bold font-serif text-zinc-900 dark:text-zinc-100 mb-6">What I’m usually doing:</h3>
+            <ul className="space-y-4">
+              <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                <span>Turning vague product bets into working systems</span>
+              </li>
+              <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                <span>Reducing cognitive load where categories are noisy</span>
+              </li>
+              <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                <span>Building the first version when the org still thinks it needs a deck</span>
+              </li>
+              <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                <span>Moving between APIs, UX, GTM, and operating details without pretending they are separate</span>
+              </li>
+            </ul>
           </div>
         </motion.div>
       </div>

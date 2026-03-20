@@ -1,44 +1,48 @@
 export const SITE_DATA = {
   name: "Mohsin Dingankar",
-  role: "Product leader building fintech platforms, recommendation engines, and foundational 0→1 products.",
-  philosophy: "I work best where product, platform, UX, and GTM are still taking shape — especially when the org needs both strategy and someone willing to build the first working version.",
-  microLine: "Product leader who still likes building.",
+  role: "Product leader building platforms, decision systems, and products that are usually messier underneath than they look from the outside.",
+  philosophy: "I work best when the product is still fuzzy, the system underneath is incomplete, and the business needs someone who can move between judgment, structure, and the first real version.",
+  microLine: "I’m at my best when the work still needs building, not just managing.",
   location: "Gurgaon, India",
   email: "mohsinfd@gmail.com",
   github: "https://github.com/mohsinfd",
   linkedin: "https://www.linkedin.com/in/mohsindingankar",
   cv: "/mohsin-dingankar-cv.pdf",
   proofStrip: [
-    "19 lenders onboarded",
     "150+ country KYC systems",
     "700M+ loyalty profiles",
-    "Seed-to-scale fintech builds"
+    "0→1 product and platform builds",
+    "Builder across consumer and enterprise"
   ],
   howIWork: {
     headline: "How I Work",
-    subheading: "I’m most useful when the org needs both product judgment and builder energy — someone who can define the system, pressure-test the details, and help create motion before everything is perfectly staffed or fully clear.",
+    subheading: "I’m most useful when the work is still half-formed: when the product is unclear, the rails are weak, and the team needs someone who can create structure without pretending the ambiguity isn’t there.",
     principles: [
       {
-        title: "Systems over screens",
-        description: "I care about the mechanism, not just the interface. Good products change behavior because the underlying logic, incentives, and flows are sound — not because the UI looks polished in isolation."
+        title: "Mechanism before interface",
+        description: "I rarely trust a polished surface unless the logic underneath holds up. Most product problems are not really screen problems — they are incentive problems, flow problems, data problems, or systems problems wearing a visual disguise."
       },
       {
-        title: "Ownership without ceremony",
-        description: "I do not wait for perfect role clarity or perfect resourcing. I move from problem framing to specs to prototypes to launch support when the work demands it. Titles matter less than momentum."
+        title: "Ownership without theatre",
+        description: "I do not need perfect role boundaries to start moving. If the work needs framing, structure, prototyping, debugging, or a hard conversation, I would rather step in than wait for cleaner org design."
       },
       {
-        title: "Contract-first architecture",
-        description: "In complex products, clean contracts matter more than visual polish. Docs, data structures, edge cases, and partner rails are part of the product, even when the user never sees them directly."
+        title: "Leverage over activity",
+        description: "I look for the part of the system where one sharp intervention changes a lot downstream: a cleaner contract, a clearer decision flow, a better recommendation layer, a faster demo, a stronger rail. I respect effort, but I trust leverage more."
       },
       {
-        title: "Evidence over adjectives",
-        description: "I prefer measurable claims, instrumented flows, and observable tradeoffs over strategy language that sounds good but does not survive contact with product reality."
+        title: "Respect the rails",
+        description: "In complex products, docs, data structures, edge cases, partner constraints, and fallback logic are not backend details. They are part of the product. Users eventually feel every weak rail, whether they can name it or not."
       },
       {
-        title: "Work across altitude",
-        description: "I work comfortably with junior engineers, PMs, operators, senior stakeholders, and founders. A lot of product work is really translation work, and I like operating in that layer."
+        title: "Evidence, then taste",
+        description: "I like measurable truth, but product is not just math. Good judgment also needs taste: knowing what to simplify, where to be opinionated, what not to build, and which kind of polish is actually hiding confusion."
+      },
+      {
+        title: "Hold the signal",
+        description: "I work well across altitude — junior engineers, PMs, operators, senior stakeholders, founders. A lot of product leadership is really translation, and I’m comfortable being the person who keeps the original signal intact while it moves across people and agendas."
       }
     ],
-    closingLine: "Product is easiest to fake in slides and hardest to fake in operating systems. I prefer the second."
+    closingLine: "I trust products more when they work a little before they talk a lot."
   }
 };

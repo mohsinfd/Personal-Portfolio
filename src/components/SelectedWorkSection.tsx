@@ -21,27 +21,27 @@ export const SelectedWorkSection = () => (
         title="Selected Work" 
       />
       <div className="mt-10 mb-16 bg-zinc-50 dark:bg-zinc-900/40 rounded-3xl p-8 lg:p-10 border border-zinc-200/80 dark:border-zinc-800/80 max-w-4xl shadow-sm">
-        <h3 className="text-xl font-bold font-serif text-zinc-900 dark:text-zinc-100 mb-6">The problems I'm usually drawn to:</h3>
+        <h3 className="text-xl font-bold font-serif text-zinc-900 dark:text-zinc-100 mb-6">The kinds of problems I keep circling back to</h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-zinc-600 dark:text-zinc-400">
           <li className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>Complex decisions that are hard to make legible for users</span>
+            <span>decisions that feel harder than they should for users</span>
           </li>
           <li className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>Products whose visible UX is weaker than the underlying opportunity</span>
+            <span>products whose visible UX is weaker than the underlying opportunity</span>
           </li>
           <li className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>Systems that need cleaner rails before they need more features</span>
+            <span>systems that need better rails before they need more features</span>
           </li>
           <li className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>Categories where interaction models are stale, shallow, or copied from elsewhere</span>
+            <span>categories still borrowing stale interaction models</span>
           </li>
           <li className="flex gap-3 items-start">
             <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>High-ambiguity builds that need both structure and momentum</span>
+            <span>teams that need structure and motion before they have certainty</span>
           </li>
         </ul>
       </div>
