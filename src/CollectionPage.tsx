@@ -79,6 +79,7 @@ const CollectionPage = () => {
                         <img 
                           src={skin.imageUrl} 
                           alt={skin.name}
+                          referrerPolicy="no-referrer"
                           className="w-full h-full object-contain filter drop-shadow-xl group-hover:scale-110 transition-transform duration-500 ease-out relative z-20"
                           loading="lazy"
                         />

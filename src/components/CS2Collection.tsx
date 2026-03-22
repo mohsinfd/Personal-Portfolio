@@ -20,6 +20,7 @@ export const SkinCard = ({ skin }: { skin: CSSkin; key?: React.Key }) => (
       <img 
         src={skin.imageUrl} 
         alt={skin.name} 
+        referrerPolicy="no-referrer"
         className="w-full h-full object-contain opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out drop-shadow-2xl"
       />
     </div>
