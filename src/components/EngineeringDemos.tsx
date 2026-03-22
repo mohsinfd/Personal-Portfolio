@@ -19,9 +19,9 @@ export const EngineeringDemos = () => {
               <Terminal className="w-6 h-6 text-indigo-400" />
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-indigo-400">Engineering & Demos</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Prototypes & Repos</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Things I build to make the work move</h2>
             <p className="text-zinc-400 text-lg leading-relaxed">
-              Public repos, prototypes, docs, and demos I’ve used to accelerate alignment, pressure-test ideas, and unblock real product work.
+              Public repos, prototypes, docs, and experiments that helped clarify a product, unlock a conversation, or make a system more concrete than a deck could.
             </p>
           </div>
           <a 

@@ -75,7 +75,7 @@ export const Hero = () => (
               </li>
               <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
-                <span>Reducing cognitive load where categories are noisy</span>
+                <span>Making hard decisions feel more legible when categories are noisy, fragmented, or full of fake clarity</span>
               </li>
               <li className="flex gap-3 items-start text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />

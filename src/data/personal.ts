@@ -1,7 +1,7 @@
 import { CSSkin } from '../types';
 
 export const PERSONAL_DATA = {
-  bio: "Partner to Ragini, dad to Mizu, and living in a slightly chaotic home with one dog and three cats. Outside work I still care about games, stories, design, and the strange emotional value people attach to well-made objects.",
+  bio: "Partner to Ragini, dad to Mizu, and living in a slightly chaotic home with one dog and three cats. Outside work I still care about games, stories, design, and the odd emotional charge that well-made things can carry.",
   csSkinsDescription: "A small collector’s shelf from a game I’ve loved for years — part aesthetics, part memory, part ritual."
 };
 

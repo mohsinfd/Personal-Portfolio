@@ -1,8 +1,8 @@
 export const SITE_DATA = {
   name: "Mohsin Dingankar",
-  role: "Product leader building platforms, decision systems, and products that are usually messier underneath than they look from the outside.",
-  philosophy: "I work best when the product is still fuzzy, the system underneath is incomplete, and the business needs someone who can move between judgment, structure, and the first real version.",
-  microLine: "I’m at my best when the work still needs building, not just managing.",
+  role: "Product leader working on systems that are usually more fragile, more political, and more interesting underneath than they first appear.",
+  philosophy: "I do my best work when the product is still unclear, the rails are weak, and somebody needs to turn a half-formed idea into something the team can actually react to. I’ve spent enough time inside ambitious but fragile systems to stop trusting polish too early.",
+  microLine: "I’ve always been more useful in the build than in the theatre around it.",
   location: "Gurgaon, India",
   email: "mohsinfd@gmail.com",
   github: "https://github.com/mohsinfd",
@@ -16,33 +16,33 @@ export const SITE_DATA = {
   ],
   howIWork: {
     headline: "How I Work",
-    subheading: "I’m most useful when the work is still half-formed: when the product is unclear, the rails are weak, and the team needs someone who can create structure without pretending the ambiguity isn’t there.",
+    subheading: "The deeper reveal about who I am when work gets real.",
     principles: [
       {
         title: "Mechanism before interface",
-        description: "I rarely trust a polished surface unless the logic underneath holds up. Most product problems are not really screen problems — they are incentive problems, flow problems, data problems, or systems problems wearing a visual disguise."
+        description: "I’ve learned not to trust polished surfaces too quickly. Most product problems are not really screen problems — they are flow problems, incentive problems, data problems, or systems problems that happen to be visible through the UI."
       },
       {
         title: "Ownership without theatre",
-        description: "I do not need perfect role boundaries to start moving. If the work needs framing, structure, prototyping, debugging, or a hard conversation, I would rather step in than wait for cleaner org design."
+        description: "I don’t need the org chart to make sense before I start helping. If the work needs framing, prototyping, debugging, pressure-testing, or just someone to hold it together for a while, I would rather step in than wait for cleaner boundaries."
       },
       {
         title: "Leverage over activity",
-        description: "I look for the part of the system where one sharp intervention changes a lot downstream: a cleaner contract, a clearer decision flow, a better recommendation layer, a faster demo, a stronger rail. I respect effort, but I trust leverage more."
+        description: "I’m always looking for the part of the system where one sharp intervention changes everything downstream: a better contract, a more legible decision flow, a faster demo, a recommendation engine that actually helps, not just decorates. Effort matters, but leverage changes the game."
       },
       {
         title: "Respect the rails",
-        description: "In complex products, docs, data structures, edge cases, partner constraints, and fallback logic are not backend details. They are part of the product. Users eventually feel every weak rail, whether they can name it or not."
+        description: "In complex products, the rails are the product. Docs, data structures, edge cases, partner constraints, fallback logic — users may never see them, but they eventually feel every weak one."
       },
       {
         title: "Evidence, then taste",
-        description: "I like measurable truth, but product is not just math. Good judgment also needs taste: knowing what to simplify, where to be opinionated, what not to build, and which kind of polish is actually hiding confusion."
+        description: "I like measurable truth, but product judgment is not just metrics. It also needs taste: what to simplify, where to be opinionated, what not to build, and when a layer of polish is really just hiding confusion."
       },
       {
         title: "Hold the signal",
-        description: "I work well across altitude — junior engineers, PMs, operators, senior stakeholders, founders. A lot of product leadership is really translation, and I’m comfortable being the person who keeps the original signal intact while it moves across people and agendas."
+        description: "I work well across altitude — junior engineers, PMs, operators, senior stakeholders, founders. A lot of product leadership is really just signal preservation: keeping the original problem intact while it passes through people with different vocabularies, agendas, and levels of context."
       }
     ],
-    closingLine: "I trust products more when they work a little before they talk a lot."
+    closingLine: "I’ve become suspicious of anything that sounds solved before it has survived contact with reality."
   }
 };
