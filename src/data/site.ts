@@ -5,14 +5,14 @@ export const SITE_DATA = {
   role: "Product lead for 0-to-1 fintech systems: cards, loans, APIs, KYC flows, recommendation engines, and AI-assisted product execution.",
   philosophy: "I do my best work before the path is neat: when a product bet needs clearer rails, a first version, and enough evidence for the team to make the next decision. My work sits across product strategy, API contracts, UX, GTM, and the operating details that make fragile systems hold together.",
   microLine: "I am usually more useful in the build than in the theatre around it.",
-  location: "Gurgaon, India",
+  location: "India",
   email: "mohsinfd@gmail.com",
   github: "https://github.com/mohsinfd",
   linkedin: "https://www.linkedin.com/in/mohsindingankar",
   cv: "/mohsin-dingankar-cv.pdf",
   proofStrip: [
     { value: "150+", label: "country KYC systems" },
-    { value: "700M+", label: "user-scale systems" },
+    { value: "700M+", label: "profile-scale loyalty systems" },
     { value: "0-to-1", label: "product and platform builds" },
     { value: "Cards + loans", label: "consumer fintech journeys" }
   ],

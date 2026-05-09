@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import CollectionPage from './CollectionPage';
@@ -9,35 +8,15 @@ import {
   Linkedin, 
   Mail, 
   Download, 
-  ChevronRight, 
-  ChevronDown,
-  ExternalLink, 
   Copy, 
   CheckCircle2, 
-  Briefcase, 
-  User, 
-  Target,
   FileText,
   MapPin,
   Sun,
-  Moon,
-  Milestone,
-  Zap,
-  Code,
-  Users,
-  Eye,
-  Terminal,
-  BookOpen,
-  ArrowRight
+  Moon
 } from 'lucide-react';
 import { SITE_DATA } from './data/site';
-import { WORK_DATA } from './data/work';
-import { EXPERIENCE_DATA } from './data/experience';
-import { DEMOS_DATA } from './data/demos';
-import { PERSONAL_DATA, CS_SKINS_DATA } from './data/personal';
-import { WRITING_DATA } from './data/writing';
 import { RESUME_TXT } from './constants';
-import { SelectedWork } from './types';
 import { Hero } from './components/Hero';
 import { SelectedWorkSection } from './components/SelectedWorkSection';
 import { HowIWork } from './components/HowIWork';
@@ -46,6 +25,7 @@ import { EngineeringDemos } from './components/EngineeringDemos';
 import { WritingSection } from './components/WritingSection';
 import { OutsideWork } from './components/OutsideWork';
 import { CS2Collection } from './components/CS2Collection';
+import { Card, SectionHeader } from './components/ui';
 
 // --- Theme Implementation ---
 
@@ -63,30 +43,6 @@ const ThemeToggle = () => {
   );
 };
 
-// --- Reusable Components ---
-
-const Badge = ({ children, className = "" }: { children?: React.ReactNode; className?: string; key?: React.Key }) => (
-  <span className={`px-3 py-1 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 ${className}`}>
-    {children}
-  </span>
-);
-
-const SectionHeader = ({ title, subtitle, icon: Icon }: { title: string; subtitle?: string; icon?: any }) => (
-  <div className="mb-10">
-    <div className="flex items-center gap-3 mb-2">
-      {Icon && <Icon className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />}
-      <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 font-serif">{title}</h2>
-    </div>
-    {subtitle && <p className="text-zinc-500 dark:text-zinc-400 max-w-2xl">{subtitle}</p>}
-  </div>
-);
-
-const Card = ({ children, className = "" }: { children?: React.ReactNode; className?: string; key?: React.Key }) => (
-  <div className={`bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 ${className}`}>
-    {children}
-  </div>
-);
-
 const NavLink = ({ href, children, active }: { href: string; children?: React.ReactNode; active?: boolean }) => (
   <a 
     href={href} 
@@ -98,6 +54,12 @@ const NavLink = ({ href, children, active }: { href: string; children?: React.Re
 
 const ResumeSection = () => {
   const [copied, setCopied] = useState(false);
+  const resumeHighlights = [
+    { label: 'Operating range', value: '0-to-1 fintech platforms, API products, recommendations, KYC, and AI-led prototyping' },
+    { label: 'Recent scope', value: 'BankKaro and great.cards across cards, loans, partner rails, calculators, and whitelabel launches' },
+    { label: 'Scale handled', value: '150+ country compliance flows and 700M+ profile-scale loyalty systems' },
+    { label: 'Leadership mode', value: 'High-ownership product lead who can move from strategy to architecture, UX, launch, and iteration' },
+  ];
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(RESUME_TXT);
@@ -114,7 +76,7 @@ const ResumeSection = () => {
             title="Full Resume" 
             subtitle="Plain-text version for quick review, sharing, and recruiter workflows."
           />
-          <div className="flex gap-3 mb-10">
+          <div className="flex gap-3 md:mb-10">
             <button 
               onClick={copyToClipboard}
               className="inline-flex items-center gap-2 bg-white dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all border border-zinc-200 dark:border-zinc-800"
@@ -129,6 +91,18 @@ const ResumeSection = () => {
               <Download className="w-4 h-4" /> Download PDF
             </a>
           </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-800 mb-8">
+          {resumeHighlights.map((item) => (
+            <div key={item.label} className="bg-white dark:bg-zinc-950 p-5">
+              <p className="text-[11px] uppercase tracking-[0.18em] font-bold text-zinc-400 dark:text-zinc-500 mb-3">
+                {item.label}
+              </p>
+              <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                {item.value}
+              </p>
+            </div>
+          ))}
         </div>
         <Card className="bg-white dark:bg-zinc-950 p-8 border-dashed dark:border-zinc-800">
           <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[600px] overflow-y-auto scrollbar-hide">
@@ -154,10 +128,10 @@ const Footer = () => (
               <a href={`mailto:${SITE_DATA.email}`} className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
                 <Mail className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
-              <a href={SITE_DATA.linkedin} target="_blank" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+              <a href={SITE_DATA.linkedin} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
                 <Linkedin className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
-              <a href={SITE_DATA.github} target="_blank" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+              <a href={SITE_DATA.github} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
                 <Github className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
             </div>
@@ -258,7 +232,7 @@ const PortfolioContent = () => {
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 md:hidden">
         <div className="bg-zinc-900/90 dark:bg-zinc-100/90 text-white dark:text-zinc-900 px-6 py-2.5 rounded-full shadow-2xl backdrop-blur-md text-[10px] font-bold uppercase tracking-widest flex gap-4 border border-white/10 dark:border-black/10">
           <a href="#work">Work</a>
-          <a href="#demos">Demos</a>
+          <a href="#how-i-work">Principles</a>
           <a href="#resume">CV</a>
         </div>
       </div>

@@ -5,11 +5,11 @@ import { SectionHeader } from './ui';
 
 const getCardVisuals = (id: string) => {
   switch (id) {
-    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform', asset: '/assets/work-bankkaro.svg', alt: 'BankKaro and great.cards product system diagram for spend signals, recommendation logic, and bank API rails' };
-    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention', asset: '/assets/work-fanclash.svg', alt: 'FanClash product diagram showing live fantasy loops, engagement signals, and scoring systems' };
-    case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale', asset: '/assets/work-systems.svg', alt: 'Systems at scale diagram for KYC, risk, data, operations, UX, and support rails' };
-    case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator', asset: '/assets/work-founder.svg', alt: 'Founder builder diagram connecting supply, product, operations, and business model work' };
-    default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work', asset: '/assets/hero-systems-map.svg', alt: 'Selected product leadership work diagram' };
+    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform', asset: '/assets/work-bankkaro.svg', alt: 'BankKaro and great.cards product system diagram for spend signals, recommendation logic, and bank API rails', proof: [] };
+    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention', asset: '/assets/work-fanclash.svg', alt: 'FanClash product diagram showing live fantasy loops, engagement signals, and scoring systems', proof: [] };
+    case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale', asset: '', alt: '', proof: ['150+ countries', '700M+ profiles', 'KYC + loyalty', 'regulated flows'] };
+    case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator', asset: '', alt: '', proof: ['200+ hotels', 'web + mobile', 'supply + ops', 'post-sale loops'] };
+    default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work', asset: '', alt: '', proof: [] };
   }
 };
 
@@ -47,10 +47,10 @@ export const SelectedWorkSection = () => (
 
       <div className="space-y-5">
         {WORK_DATA.map((cs, index) => {
-          const { Icon, accent, tag, asset, alt } = getCardVisuals(cs.id || '');
+          const { Icon, accent, tag, asset, alt, proof } = getCardVisuals(cs.id || '');
           return (
             <article key={cs.id} className="group grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-0 border border-zinc-200 dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-950 overflow-hidden transition-all hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg">
-              <div className="p-6 bg-zinc-50 dark:bg-zinc-900/45 border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-zinc-800">
+              <div className="p-6 bg-zinc-50 dark:bg-zinc-900/50 border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-zinc-800">
                 <div className="flex items-center justify-between mb-8">
                   <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{String(index + 1).padStart(2, '0')}</span>
                   <Icon className={`w-5 h-5 ${accent}`} />
@@ -66,14 +66,24 @@ export const SelectedWorkSection = () => (
                     ))}
                   </div>
                 )}
-                <div className="mt-8 overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
-                  <img
-                    src={asset}
-                    alt={alt}
-                    className="w-full aspect-[16/10] object-cover"
-                    loading="lazy"
-                  />
-                </div>
+                {asset ? (
+                  <div className="mt-8 overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+                    <img
+                      src={asset}
+                      alt={alt}
+                      className="w-full aspect-[16/10] object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-800">
+                    {proof.map((item) => (
+                      <div key={item} className="bg-white dark:bg-zinc-950 p-3 text-xs font-bold text-zinc-600 dark:text-zinc-300">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <div className="p-6 lg:p-8">

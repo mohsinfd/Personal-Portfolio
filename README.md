@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Mohsin Dingankar Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio for Mohsin Dingankar, focused on product leadership, 0-to-1 systems, consumer fintech, API-first products, recommendation systems, and product operating principles.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/7e2e389d-53b5-4a44-b0ff-f120eeb9db2e
+- React
+- TypeScript
+- Vite
+- Framer Motion
+- Lenis
+- Lucide React
+- Tailwind CSS
 
-## Run Locally
+## Local Development
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## Build
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run build
+```
+
+## Design Direction
+
+Editorial, restrained, systems-oriented, and proof-led. The site should feel like a product leader's operating memo rather than a generic developer or SaaS landing page.
+
+## Key Sections
+
+- Hero
+- Selected Work
+- Operating Principles
+- Career Arc
+- Engineering & Demos
+- Notes
+- Outside Work
+- Resume
