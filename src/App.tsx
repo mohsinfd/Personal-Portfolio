@@ -112,7 +112,7 @@ const ResumeSection = () => {
           <SectionHeader 
             icon={FileText}
             title="Full Resume" 
-            subtitle="Optimized for ATS. Focused on results."
+            subtitle="Plain-text version for quick review, sharing, and recruiter workflows."
           />
           <div className="flex gap-3 mb-10">
             <button 

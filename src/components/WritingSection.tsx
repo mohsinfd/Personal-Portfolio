@@ -23,7 +23,7 @@ export const WritingSection = () => (
           ))
         ) : (
           <div className="bg-white dark:bg-zinc-950 p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 text-center">
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 italic">Writing in progress. Publishing soon.</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 italic">Notes are being drafted from product work that is already on the page.</p>
           </div>
         )}
       </div>

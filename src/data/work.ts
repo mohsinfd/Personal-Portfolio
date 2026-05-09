@@ -5,7 +5,7 @@ export const WORK_DATA: SelectedWork[] = [
     id: "bankkaro",
     title: "BankKaro / great.cards",
     rootProblem: "Most card and loan products were still acting as if more listings and comparison tables would somehow create clarity. Users were left doing guesswork, while the business stayed too dependent on thin aggregator logic.",
-    productBelief: "This was not mainly a content problem. It was a systems problem: connect user behaviour, lender rails, recommendation logic, cashback economics, and distribution, and the product stops behaving like another comparison layer.",
+    productBelief: "This was not mainly a content problem. The product needed a system that connected user behaviour, lender rails, recommendation logic, cashback economics, and distribution.",
     built: [
       "API-first rails across cards, loans, calculators, and recommendation flows",
       "great.cards as a rupee-accurate, spend-based decision engine",
@@ -24,7 +24,7 @@ export const WORK_DATA: SelectedWork[] = [
     id: "fanclash",
     title: "FanClash",
     rootProblem: "Fantasy eSports felt too borrowed. The mechanics, pacing, and product logic leaned heavily on older fantasy models instead of the actual nature of live eSports.",
-    productBelief: "The product had to feel more native to the category: more live, more reactive, and less like a static prediction layer wrapped around a fast-moving game.",
+    productBelief: "The product had to feel native to the category: live, reactive, and closer to the pace of eSports than a static prediction layer.",
     built: [
       "a tighter KPI and experimentation cadence across product and analytics",
       "a novel real-time fantasy format",

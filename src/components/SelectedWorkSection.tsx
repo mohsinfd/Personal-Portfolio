@@ -5,11 +5,11 @@ import { SectionHeader } from './ui';
 
 const getCardVisuals = (id: string) => {
   switch (id) {
-    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform' };
-    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention' };
-    case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale' };
-    case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator' };
-    default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work' };
+    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform', asset: '/assets/work-bankkaro.svg', alt: 'BankKaro and great.cards product system diagram for spend signals, recommendation logic, and bank API rails' };
+    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention', asset: '/assets/work-fanclash.svg', alt: 'FanClash product diagram showing live fantasy loops, engagement signals, and scoring systems' };
+    case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale', asset: '/assets/work-systems.svg', alt: 'Systems at scale diagram for KYC, risk, data, operations, UX, and support rails' };
+    case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator', asset: '/assets/work-founder.svg', alt: 'Founder builder diagram connecting supply, product, operations, and business model work' };
+    default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work', asset: '/assets/hero-systems-map.svg', alt: 'Selected product leadership work diagram' };
   }
 };
 
@@ -47,7 +47,7 @@ export const SelectedWorkSection = () => (
 
       <div className="space-y-5">
         {WORK_DATA.map((cs, index) => {
-          const { Icon, accent, tag } = getCardVisuals(cs.id || '');
+          const { Icon, accent, tag, asset, alt } = getCardVisuals(cs.id || '');
           return (
             <article key={cs.id} className="group grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-0 border border-zinc-200 dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-950 overflow-hidden transition-all hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg">
               <div className="p-6 bg-zinc-50 dark:bg-zinc-900/45 border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-zinc-800">
@@ -66,6 +66,14 @@ export const SelectedWorkSection = () => (
                     ))}
                   </div>
                 )}
+                <div className="mt-8 overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+                  <img
+                    src={asset}
+                    alt={alt}
+                    className="w-full aspect-[16/10] object-cover"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
               <div className="p-6 lg:p-8">
