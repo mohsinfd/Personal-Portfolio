@@ -1,113 +1,104 @@
 import React from 'react';
-import { Briefcase, ChevronRight, ExternalLink, Building2, Gamepad2, Network, Rocket } from 'lucide-react';
+import { ArrowUpRight, Briefcase, Building2, Gamepad2, Network, Rocket } from 'lucide-react';
 import { WORK_DATA } from '../data/work';
-import { Card, SectionHeader } from './ui';
+import { SectionHeader } from './ui';
 
 const getCardVisuals = (id: string) => {
   switch (id) {
-    case 'bankkaro': return { Icon: Building2, color: 'text-blue-500 dark:text-blue-400', bg: 'bg-blue-50 dark:bg-blue-500/10' };
-    case 'fanclash': return { Icon: Gamepad2, color: 'text-violet-500 dark:text-violet-400', bg: 'bg-violet-50 dark:bg-violet-500/10' };
-    case 'systems-at-scale': return { Icon: Network, color: 'text-emerald-500 dark:text-emerald-400', bg: 'bg-emerald-50 dark:bg-emerald-500/10' };
-    case 'founder-builder': return { Icon: Rocket, color: 'text-orange-500 dark:text-orange-400', bg: 'bg-orange-50 dark:bg-orange-500/10' };
-    default: return { Icon: Briefcase, color: 'text-indigo-500 dark:text-indigo-400', bg: 'bg-indigo-50 dark:bg-indigo-500/10' };
+    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform' };
+    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention' };
+    case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale' };
+    case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator' };
+    default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work' };
   }
 };
+
+const problemTypes = [
+  'unclear user decisions',
+  'weak rails under polished surfaces',
+  'partner and API constraints',
+  'teams needing structure before certainty',
+  'systems where UX, GTM, and operations are inseparable'
+];
 
 export const SelectedWorkSection = () => (
   <section id="work" className="py-24 bg-white dark:bg-zinc-950 transition-colors relative">
     <div className="max-w-6xl mx-auto px-6 relative z-10">
-      <SectionHeader 
-        icon={Briefcase}
-        title="Selected Work" 
-      />
-      <div className="mt-10 mb-16 bg-zinc-50 dark:bg-zinc-900/40 rounded-3xl p-8 lg:p-10 border border-zinc-200/80 dark:border-zinc-800/80 max-w-4xl shadow-sm">
-        <h3 className="text-xl font-bold font-serif text-zinc-900 dark:text-zinc-100 mb-6">The kinds of problems I keep circling back to</h3>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-zinc-600 dark:text-zinc-400">
-          <li className="flex gap-3 items-start">
-            <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>decisions that feel harder than they should for users</span>
-          </li>
-          <li className="flex gap-3 items-start">
-            <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>products whose visible UX is weaker than the underlying opportunity</span>
-          </li>
-          <li className="flex gap-3 items-start">
-            <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>systems that need better rails before they need more features</span>
-          </li>
-          <li className="flex gap-3 items-start">
-            <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>categories still borrowing stale interaction models</span>
-          </li>
-          <li className="flex gap-3 items-start">
-            <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/80 mt-1.5 flex-shrink-0" />
-            <span>teams that need structure and motion before they have certainty</span>
-          </li>
-        </ul>
+      <div className="max-w-3xl">
+        <SectionHeader
+          icon={Briefcase}
+          title="Selected Work"
+          subtitle="A few environments where the useful work was not just making screens better, but making the underlying system more legible."
+        />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {WORK_DATA.map((cs) => {
-          const { Icon, color, bg } = getCardVisuals(cs.id || '');
+      <div className="mb-14 border-y border-zinc-200 dark:border-zinc-800 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6">
+          <h3 className="text-sm font-bold uppercase tracking-[0.22em] text-zinc-400 dark:text-zinc-500">Recurring problems</h3>
+          <div className="flex flex-wrap gap-2">
+            {problemTypes.map((problem) => (
+              <span key={problem} className="px-3 py-1.5 rounded-md bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-600 dark:text-zinc-400">
+                {problem}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-5">
+        {WORK_DATA.map((cs, index) => {
+          const { Icon, accent, tag } = getCardVisuals(cs.id || '');
           return (
-            <Card key={cs.id} className="group relative overflow-hidden flex flex-col h-full hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50">
-              
-              {/* Visual Header / Logo Placeholder */}
-              <div className={`w-full h-32 ${bg} mb-6 rounded-t-lg flex items-center justify-center transition-colors duration-300`}>
-                <div className="p-4 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm transform group-hover:scale-110 transition-transform duration-300">
-                  <Icon className={`w-8 h-8 ${color}`} />
+            <article key={cs.id} className="group grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-0 border border-zinc-200 dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-950 overflow-hidden transition-all hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg">
+              <div className="p-6 bg-zinc-50 dark:bg-zinc-900/45 border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-zinc-800">
+                <div className="flex items-center justify-between mb-8">
+                  <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{String(index + 1).padStart(2, '0')}</span>
+                  <Icon className={`w-5 h-5 ${accent}`} />
                 </div>
-              </div>
-
-              <div className="px-2 flex-grow flex flex-col pb-2">
-                <h3 className="text-2xl font-bold mb-6 font-serif group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors text-zinc-900 dark:text-zinc-100">{cs.title}</h3>
-                
-                <div className="space-y-6 flex-grow flex flex-col">
-                  {/* Root Problem */}
-                  <div>
-                    <h4 className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-2">Root Problem</h4>
-                    <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">{cs.rootProblem}</p>
-                  </div>
-                  
-                  {/* Product Belief */}
-                  <div>
-                    <h4 className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-2">Product Belief</h4>
-                    <p className="text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed italic border-l-2 border-indigo-400 dark:border-indigo-500/70 pl-3 py-0.5">"{cs.productBelief}"</p>
-                  </div>
-
-                  {/* What I Built */}
-                  <div>
-                    <h4 className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-3">What I Built</h4>
-                    <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-2.5 leading-relaxed">
-                      {cs.built?.map((a, i) => (
-                        <li key={i} className="flex gap-3 items-start">
-                          <ChevronRight className="w-3.5 h-3.5 text-indigo-400 dark:text-indigo-500 flex-shrink-0 mt-0.5" />
-                          <span>{a}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Why it Mattered */}
-                  <div className="pt-2 mt-auto">
-                    <h4 className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-2">Why It Mattered</h4>
-                    <div className="text-sm font-medium text-indigo-950 dark:text-indigo-100/90 leading-relaxed bg-indigo-50/60 dark:bg-indigo-900/10 p-4 rounded-xl border border-indigo-100/50 dark:border-indigo-800/30">
-                      {cs.whyItMattered}
-                    </div>
-                  </div>
-                </div>
-
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">{tag}</p>
+                <h3 className="text-2xl font-bold font-serif text-zinc-950 dark:text-zinc-50 leading-tight">{cs.title}</h3>
                 {cs.links && cs.links.length > 0 && (
-                  <div className="flex gap-4 pt-6 mt-6 border-t border-zinc-100 dark:border-zinc-800/60">
+                  <div className="mt-8 flex flex-wrap gap-2">
                     {cs.links.map((link) => (
-                      <a key={link.label} href={link.href} className="text-xs font-bold flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors bg-indigo-50 dark:bg-indigo-900/20 px-3 py-1.5 rounded-md">
-                        {link.label} <ExternalLink className="w-3 h-3" />
+                      <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-800 rounded-md px-2.5 py-1.5 bg-white dark:bg-zinc-950">
+                        {link.label} <ArrowUpRight className="w-3 h-3" />
                       </a>
                     ))}
                   </div>
                 )}
               </div>
-            </Card>
+
+              <div className="p-6 lg:p-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Context</p>
+                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">{cs.rootProblem}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Product Belief</p>
+                    <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200 font-serif italic">"{cs.productBelief}"</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 grid grid-cols-1 xl:grid-cols-[1fr_0.85fr] gap-8">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">What changed</p>
+                    <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+                      {cs.built?.map((item) => (
+                        <li key={item} className="flex gap-2.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                          <span className="mt-2 h-1 w-1 rounded-full bg-zinc-400 dark:bg-zinc-600 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg p-5">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Why it mattered</p>
+                    <p className="text-sm leading-relaxed font-medium text-zinc-800 dark:text-zinc-200">{cs.whyItMattered}</p>
+                  </div>
+                </div>
+              </div>
+            </article>
           );
         })}
       </div>

@@ -4,7 +4,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   {
     company: "CashKaro / BankKaro",
     role: "Associate Director of Product (Product Lead, BankKaro)",
-    period: "June 2024 – Present",
+    period: "June 2024 - Present",
     location: "Gurgaon",
     isCurrent: true,
     category: "Platform Leadership",
@@ -18,7 +18,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   {
     company: "FanClash",
     role: "Head of Product",
-    period: "July 2022 – Aug 2023",
+    period: "July 2022 - Aug 2023",
     location: "Gurgaon",
     category: "Platform Leadership",
     description: [
@@ -31,7 +31,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   {
     company: "Western Union, Bizongo / Artwork Flow, Zolo, Loylty Rewardz, Musafir",
     role: "Senior Product Manager / Product Lead",
-    period: "2016 – 2022",
+    period: "2016 - 2022",
     location: "",
     category: "Systems & Scale",
     description: [
@@ -44,7 +44,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   {
     company: "HotelsAroundYou.com",
     role: "Co-Founder & Chief Product Officer",
-    period: "Jan 2013 – May 2016",
+    period: "Jan 2013 - May 2016",
     location: "Mumbai",
     category: "Founder / Builder",
     description: [

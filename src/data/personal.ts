@@ -2,13 +2,13 @@ import { CSSkin } from '../types';
 
 export const PERSONAL_DATA = {
   bio: "Partner to Ragini, dad to Mizu, and living in a slightly chaotic home with one dog and three cats. Outside work I still care about games, stories, design, and the odd emotional charge that well-made things can carry.",
-  csSkinsDescription: "A small collector’s shelf from a game I’ve loved for years — part aesthetics, part memory, part ritual."
+  csSkinsDescription: "A small collector's shelf from a game I've loved for years - part aesthetics, part memory, part ritual."
 };
 
 export const CS_SKINS_DATA: CSSkin[] = [
   {
     id: "falchion-fade",
-    name: "★ StatTrak™ Falchion Knife | Fade",
+    name: "StatTrak Falchion Knife | Fade",
     weapon: "Knife",
     wear: "Factory New",
     float: "0.01234",
@@ -18,7 +18,7 @@ export const CS_SKINS_DATA: CSSkin[] = [
   },
   {
     id: "cobalt-skulls",
-    name: "★ Hand Wraps | Cobalt Skulls",
+    name: "Hand Wraps | Cobalt Skulls",
     weapon: "Gloves",
     wear: "Minimal Wear",
     float: "0.12050",
@@ -58,12 +58,12 @@ export const CS_SKINS_DATA: CSSkin[] = [
   },
   {
     id: "m4a1s-printstream",
-    name: "StatTrak™ M4A1-S | Printstream",
+    name: "StatTrak M4A1-S | Printstream",
     weapon: "Rifle",
     wear: "Minimal Wear",
     float: "0.08000",
     category: "Modern Premium",
-    caption: "Modern, glossy, and almost architectural — the kind of skin that makes digital objects feel over-designed in the best way.",
+    caption: "Modern, glossy, and almost architectural - the kind of skin that makes digital objects feel over-designed in the best way.",
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL8ypexwjFS4_ega6F_H_OGMWrEwL9lj_F7Rienhgk1tjyIpYPwJiPTcAAoCpsiEO5ZsUbpm9C2Zuni4VHW3o5EzSX62HxP7Sg96-hWVqYi_6TJz1aW0nxrkGs"
   }
 ];

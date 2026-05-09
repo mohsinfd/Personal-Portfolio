@@ -92,6 +92,7 @@ const NavLink = ({ href, children, active }: { href: string; children?: React.Re
     href={href} 
     className={`text-sm font-medium transition-colors hover:text-indigo-600 dark:hover:text-indigo-400 ${active ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-500 dark:text-zinc-400'}`}
   >
+    {children}
   </a>
 );
 
