@@ -11,10 +11,22 @@ export const SITE_DATA = {
   linkedin: "https://www.linkedin.com/in/mohsindingankar",
   cv: "/mohsin-dingankar-cv.pdf",
   proofStrip: [
-    { value: "150+", label: "country KYC systems" },
-    { value: "700M+", label: "profile-scale loyalty systems" },
-    { value: "0-to-1", label: "product and platform builds" },
-    { value: "Cards + loans", label: "consumer fintech journeys" }
+    {
+      title: "Built in regulated systems",
+      detail: "KYC, compliance, and conversion flows across 150+ countries"
+    },
+    {
+      title: "Worked at real scale",
+      detail: "Loyalty and profile systems operating around 700M+ users"
+    },
+    {
+      title: "Comfortable at zero-to-one",
+      detail: "Turning rough product ideas into first versions teams can actually use"
+    },
+    {
+      title: "Current focus",
+      detail: "Cards, loans, recommendation logic, lender APIs, and great.cards"
+    }
   ],
   howIWork: {
     headline: "Operating Principles",

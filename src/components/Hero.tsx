@@ -29,11 +29,18 @@ export const Hero = () => (
             {SITE_DATA.philosophy}
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-y border-zinc-200 dark:border-zinc-800 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
             {SITE_DATA.proofStrip.map((proof) => (
-              <div key={proof.value} className="py-5 sm:px-4 lg:px-0 lg:pr-6 border-b last:border-b-0 sm:odd:border-r sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:border-r lg:last:border-r-0 border-zinc-200 dark:border-zinc-800">
-                <div className="text-2xl lg:text-3xl font-bold font-serif text-zinc-950 dark:text-zinc-50">{proof.value}</div>
-                <div className="mt-1 text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-500 leading-relaxed">{proof.label}</div>
+              <div
+                key={proof.title}
+                className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-4 sm:p-5"
+              >
+                <h2 className="text-sm font-semibold text-zinc-950 dark:text-zinc-50 mb-2">
+                  {proof.title}
+                </h2>
+                <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  {proof.detail}
+                </p>
               </div>
             ))}
           </div>
