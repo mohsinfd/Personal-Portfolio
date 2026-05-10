@@ -9,10 +9,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     isCurrent: true,
     category: "Platform Leadership",
     description: [
-      "Leading product across BankKaro and great.cards while the product, platform, and distribution model are all still evolving together",
-      "Working across recommendation logic, lender rails, UX, and partner demos without pretending they are separate problems",
-      "Using AI-assisted prototyping to make ideas reactable earlier, instead of waiting for full build cycles",
-      "Doing the job in the way I find most useful: helping define the system while staying close to the details"
+      "Leading product across BankKaro and great.cards while the product, platform, and distribution model are still taking shape",
+      "Working across recommendation logic, lender rules, APIs, UX, and partner demos because these problems are connected in practice",
+      "Using AI-assisted prototyping to make ideas concrete earlier, instead of waiting for full build cycles",
+      "Trying to define the system without drifting too far away from the actual details"
     ]
   },
   {
@@ -22,10 +22,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Gurgaon",
     category: "Platform Leadership",
     description: [
-      "Led product and analytics during a period where the product needed stronger loops, clearer metrics, and mechanics that felt more native to eSports",
-      "Focused the roadmap around engagement, paying-user growth, and retention rather than feature volume",
-      "Worked closely enough to the product to shape the mechanics directly, not just the roadmap around them",
-      "Helped the product behave more like a live system and less like a static fantasy wrapper"
+      "Led product and analytics when the product needed clearer metrics, stronger loops, and mechanics that felt more natural to eSports",
+      "Focused the roadmap around engagement, paying-user growth, and retention instead of feature volume",
+      "Stayed close enough to the product to shape the mechanics directly, not just manage the roadmap around them",
+      "Helped move the product away from static fantasy behaviour and closer to a live gameplay system"
     ]
   },
   {
@@ -35,10 +35,10 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "",
     category: "Systems & Scale",
     description: [
-      "Worked in products where trust depended as much on compliance, internal rails, and operating discipline as on customer-facing UX",
-      "Moved across money movement, enterprise SaaS, loyalty systems, internal tooling, and booking funnels without losing the systems lens",
+      "Worked in products where trust depended as much on compliance, internal tools, and operating discipline as on customer-facing UX",
+      "Worked across money movement, enterprise SaaS, loyalty, internal tools, and booking funnels - different categories, but the same lesson: the hidden rails matter",
       "Learned how large products actually break, and how much of the important work is invisible until it fails",
-      "Spent these years becoming much more interested in structure than performance"
+      "Those years made me less impressed by surface polish and more interested in whether the system underneath could actually hold up"
     ]
   },
   {

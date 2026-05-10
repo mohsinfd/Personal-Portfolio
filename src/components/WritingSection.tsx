@@ -23,7 +23,7 @@ export const WritingSection = () => (
                 {post.status}
               </span>
               <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-600">
-                Drafting
+                Field note
               </span>
             </div>
 

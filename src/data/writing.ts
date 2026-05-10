@@ -1,26 +1,26 @@
 export const WRITING_DATA = [
   {
     title: "Before the Product Is Clear",
-    status: "Field Note",
-    tldr: "The earliest product work is not about perfect requirements. It is about turning a vague bet into something the team can react to, disagree with, test, and eventually build.",
+    status: "Drafting",
+    tldr: "Most early product work starts before anyone can write clean requirements. The useful thing is to make the idea concrete enough for people to argue with it.",
     href: "#"
   },
   {
     title: "APIs Are Product Decisions",
-    status: "Field Note",
-    tldr: "In fintech, APIs are not backend plumbing. They decide what the product can promise, where the experience breaks, and how much trust the user can place in the system.",
+    status: "Drafting",
+    tldr: "In fintech, APIs are not backend plumbing. They decide what the product can safely promise, where the experience will break, and how much trust the user can place in the journey.",
     href: "#"
   },
   {
     title: "Recommendation Systems Are Decision Products",
-    status: "Field Note",
-    tldr: "A good recommendation product does not just rank options. It reduces the user's mental burden, makes trade-offs legible, and earns trust by showing its logic.",
+    status: "Drafting",
+    tldr: "A recommendation product is not useful because it ranks things. It is useful when the user understands why one option is better for them than another.",
     href: "#"
   },
   {
     title: "What Scale Teaches You to Respect",
-    status: "Field Note",
-    tldr: "At scale, the invisible parts become the product: fallbacks, edge cases, compliance flows, operational discipline, and the boring rails that stop trust from collapsing.",
+    status: "Drafting",
+    tldr: "At scale, the boring parts stop being boring. Fallbacks, edge cases, compliance flows, support paths, and internal tools decide whether the product feels trustworthy.",
     href: "#"
   }
 ];

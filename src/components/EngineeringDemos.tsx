@@ -16,11 +16,11 @@ export const EngineeringDemos = () => {
               <Terminal className="w-5 h-5 text-zinc-400" />
               <span className="text-xs font-bold uppercase tracking-[0.28em] text-zinc-500">Artifacts</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Things I build to make ambiguity reactable</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Things I build so people can react to the idea</h2>
           </div>
           <div className="lg:pt-12">
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-              Public repos, prototypes, docs, and tools that made a product idea easier to test, explain, or operate. These are not portfolio decorations; they are artifacts from the workbench.
+              Public repos, prototypes, docs, and tools that made a product idea easier to test, explain, or operate. They are not here to decorate the portfolio. They are the rough working objects that helped move the product forward.
             </p>
             <a
               href={SITE_DATA.github}
