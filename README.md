@@ -1,8 +1,17 @@
 # Mohsin Dingankar Portfolio
 
-Personal portfolio for Mohsin Dingankar, focused on product leadership, 0-to-1 systems, consumer fintech, API-first products, recommendation systems, and product operating principles.
+Personal portfolio for Mohsin Dingankar: product leadership, zero-to-one systems, consumer fintech, API-first platforms, recommendation systems, and builder-led product execution.
 
-## Tech Stack
+This repository is intended to be public-facing. It contains the source for the portfolio site, sanitized resume copy, and lightweight static assets. Raw prompt history, private notes, and unpublished working documents are intentionally excluded.
+
+## What It Shows
+
+- Selected product case studies and career narrative
+- Operating principles for ambiguous zero-to-one work
+- Engineering and prototype demos worth linking from a GitHub profile
+- A public resume section without unnecessary private contact details
+
+## Stack
 
 - React
 - TypeScript
@@ -25,17 +34,8 @@ npm run dev
 npm run build
 ```
 
-## Design Direction
+## Public-Readiness Notes
 
-Editorial, restrained, systems-oriented, and proof-led. The site should feel like a product leader's operating memo rather than a generic developer or SaaS landing page.
-
-## Key Sections
-
-- Hero
-- Selected Work
-- Operating Principles
-- Career Arc
-- Engineering & Demos
-- Notes
-- Outside Work
-- Resume
+- Do not commit raw prompt exports, private drafts, or generated scratch files.
+- Keep credentials and service tokens out of the repo; use environment variables for any future dynamic integrations.
+- Review resume/contact content before publishing new PDFs.

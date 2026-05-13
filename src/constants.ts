@@ -1,6 +1,6 @@
 export const RESUME_TXT = `MOHSIN DINGANKAR
 PRODUCT LEADER | PLATFORMS, 0-TO-1 LAUNCHES, AND AI-NATIVE EXECUTION
-India | +91 98206 92913 | mohsinfd@gmail.com | linkedin.com/in/mohsindingankar
+India | mohsinfd@gmail.com | linkedin.com/in/mohsindingankar
 
 Product leader with 10+ years building B2C and B2B products across fintech, gaming, travel, and loyalty. I work best in high-ambiguity environments where the product, platform, and business model are still taking shape. My edge is high ownership: I move fluidly from strategy to architecture, UX, prototyping, and launch execution, working comfortably with junior engineers, cross-functional peers, senior stakeholders, and founders. I am most useful where the org needs both product judgment and builder energy - someone who can define the system, pressure-test the details, and help create momentum before the company is fully staffed or perfectly organized.
 
