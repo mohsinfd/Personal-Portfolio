@@ -54,7 +54,7 @@
 
   <g filter="url(#softShadow)">
     <rect x="790" y="142" width="250" height="96" rx="18" fill="#F8FAFC" stroke="#CBD5E1"/>
-    <text x="822" y="178" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">partner rails</text>
+    <text x="822" y="178" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">partner APIs</text>
     <text x="822" y="207" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13">APIs, BRE, fallbacks</text>
   </g>
 

@@ -3,7 +3,7 @@ export const SITE_DATA = {
   eyebrow: "Product Leader | 0-to-1 Systems | Consumer Fintech",
   heroHeadline: "I build product systems where the first version is still unclear.",
   role: "Product lead for 0-to-1 fintech systems: cards, loans, APIs, KYC flows, recommendation engines, and AI-assisted product execution.",
-  philosophy: "I'm useful when the product is still messy: the idea is half-formed, the rails are weak, and the team needs something real to react to. I work across product, logic, APIs, UX, GTM, and operating details because in early-stage systems, pretending these are separate is usually where things break.",
+  philosophy: "I'm useful when the product is still messy: the idea is half-formed, the basics are weak, and the team needs something real to react to. I work across product, logic, APIs, UX, GTM, and operating details because in early-stage systems, pretending these are separate is usually where things break.",
   microLine: "I'm usually more useful in the build than in the theatre around it.",
   location: "India",
   email: "mohsinfd@gmail.com",
@@ -45,8 +45,8 @@ export const SITE_DATA = {
         description: "I try to find the one change that makes everything after it easier: a better API contract, a clearer decision flow, a faster demo, or a recommendation engine that actually helps the user decide."
       },
       {
-        title: "Respect the rails",
-        description: "In complex products, the boring rails are often the product. Docs, data structures, edge cases, partner constraints, and fallback logic may stay invisible, but users eventually feel every weak one."
+        title: "Respect the plumbing",
+        description: "In complex products, the boring plumbing is often the product. Docs, data structures, edge cases, partner constraints, and fallback logic may stay invisible, but users eventually feel every weak part."
       },
       {
         title: "Evidence, then taste",

@@ -5,7 +5,7 @@ import { SITE_DATA } from '../data/site';
 
 const operatingNotes = [
   { label: 'Ambiguity', text: 'turning half-formed bets into something teams can react to' },
-  { label: 'Rails', text: 'making APIs, data, flows, and partner constraints behave as one system' },
+  { label: 'Plumbing', text: 'making APIs, data, flows, and partner constraints behave as one system' },
   { label: 'Signal', text: 'keeping the original problem intact as it moves through the org' },
   { label: 'Launch', text: 'shipping the first useful version before the deck becomes the product' }
 ];
