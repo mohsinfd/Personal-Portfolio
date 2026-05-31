@@ -74,7 +74,7 @@ const ResumeSection = () => {
           <SectionHeader 
             icon={FileText}
             title="Resume" 
-            subtitle="Snapshot first. Full text is still available when needed."
+            subtitle="Quick read, PDF, and plain text."
           />
           <div className="flex gap-3 md:mb-10">
             <button 

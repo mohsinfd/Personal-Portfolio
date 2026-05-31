@@ -16,7 +16,7 @@ export const EngineeringDemos = () => {
               <Terminal className="w-5 h-5 text-zinc-400" />
               <span className="text-xs font-bold uppercase tracking-[0.28em] text-zinc-500">Artifacts</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Artifacts from the workbench</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Things I built around the work</h2>
           </div>
           <div className="lg:pt-12">
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">

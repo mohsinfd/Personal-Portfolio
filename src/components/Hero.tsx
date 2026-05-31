@@ -83,7 +83,7 @@ export const Hero = () => (
           <div className="px-6 py-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 dark:text-zinc-500 mb-2">Operating Brief</p>
-              <h2 className="text-xl font-bold font-serif text-zinc-950 dark:text-zinc-50">Current workbench</h2>
+              <h2 className="text-xl font-bold font-serif text-zinc-950 dark:text-zinc-50">Current focus</h2>
             </div>
             <NotebookText className="w-5 h-5 text-zinc-400" />
           </div>

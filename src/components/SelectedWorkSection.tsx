@@ -20,7 +20,7 @@ export const SelectedWorkSection = () => (
         <SectionHeader
           icon={Briefcase}
           title="Selected Work"
-          subtitle="Four places where the work became real: fintech, gaming, scale, and founder work."
+          subtitle="Fintech, gaming, scale, and founder work, kept short."
         />
       </div>
 
