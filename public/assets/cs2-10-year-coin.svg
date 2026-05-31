@@ -1,0 +1,12 @@
+<svg width="520" height="390" viewBox="0 0 520 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="390" rx="34" fill="#111113"/>
+  <rect x="58" y="34" width="404" height="322" rx="28" fill="#18181B" stroke="#3F3F46"/>
+  <circle cx="260" cy="174" r="98" fill="#C084FC" opacity="0.16"/>
+  <circle cx="260" cy="174" r="82" fill="#F59E0B" stroke="#FDE68A" stroke-width="8"/>
+  <circle cx="260" cy="174" r="58" fill="#B45309" stroke="#92400E" stroke-width="4"/>
+  <text x="260" y="168" text-anchor="middle" fill="#FFFBEB" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">10</text>
+  <text x="260" y="206" text-anchor="middle" fill="#FEF3C7" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750">YEAR</text>
+  <path d="M214 258L184 322L224 306L260 338L260 258H214Z" fill="#7C2D12"/>
+  <path d="M306 258L336 322L296 306L260 338L260 258H306Z" fill="#9A3412"/>
+  <text x="260" y="316" text-anchor="middle" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">veteran coin</text>
+</svg>

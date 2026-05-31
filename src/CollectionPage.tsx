@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Sun, Moon } from 'lucide-react';
+import { ArrowLeft, ImageOff, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { INVENTORY_DATA } from './inventoryData';
 import { ThemeContext } from './App';
@@ -16,6 +16,31 @@ const ThemeToggle = () => {
     >
       {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
     </button>
+  );
+};
+
+const InventoryImage = ({ src, alt }: { src: string; alt: string }) => {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <div className="relative z-20 flex h-full w-full flex-col items-center justify-center rounded-lg border border-zinc-200 bg-white/70 p-5 text-center dark:border-zinc-800 dark:bg-zinc-950/60">
+        <ImageOff className="mb-3 h-6 w-6 text-zinc-400" />
+        <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">{alt}</span>
+        <span className="mt-1 text-[10px] font-mono uppercase tracking-widest text-zinc-400">image unavailable</span>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+      className="w-full h-full object-contain filter drop-shadow-xl group-hover:scale-105 transition-transform duration-500 ease-out relative z-20"
+      loading="lazy"
+    />
   );
 };
 
@@ -76,13 +101,7 @@ const CollectionPage = () => {
                     >
                       <div className="aspect-[4/3] bg-zinc-100 dark:bg-zinc-900/50 p-6 flex items-center justify-center relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-t from-zinc-200/50 dark:from-zinc-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-                        <img 
-                          src={skin.imageUrl} 
-                          alt={skin.name}
-                          referrerPolicy="no-referrer"
-                          className="w-full h-full object-contain filter drop-shadow-xl group-hover:scale-105 transition-transform duration-500 ease-out relative z-20"
-                          loading="lazy"
-                        />
+                        <InventoryImage src={skin.imageUrl} alt={skin.name} />
                       </div>
                       
                       <div className="p-5 flex flex-col flex-grow">
