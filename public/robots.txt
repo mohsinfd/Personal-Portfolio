@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mohsinfd.github.io/Personal-Portfolio/sitemap.xml
+Sitemap: https://mohsinfd.com/sitemap.xml
