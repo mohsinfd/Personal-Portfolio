@@ -35,7 +35,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-all hover:bg-zinc-200 dark:hover:bg-zinc-700"
+      className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-700"
       aria-label="Toggle theme"
     >
       {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -79,14 +79,14 @@ const ResumeSection = () => {
           <div className="flex gap-3 md:mb-10">
             <button 
               onClick={copyToClipboard}
-              className="inline-flex items-center gap-2 bg-white dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all border border-zinc-200 dark:border-zinc-800"
+              className="inline-flex items-center gap-2 bg-white dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-800"
             >
               {copied ? <CheckCircle2 className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
               {copied ? 'Copied' : 'Copy Text'}
             </button>
             <a 
               href={SITE_DATA.cv} 
-              className="inline-flex items-center gap-2 bg-indigo-600 dark:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-all shadow-sm"
+              className="inline-flex items-center gap-2 bg-indigo-600 dark:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors shadow-sm"
             >
               <Download className="w-4 h-4" /> Download PDF
             </a>
@@ -110,7 +110,7 @@ const ResumeSection = () => {
               Show plain-text resume
             </summary>
             <div className="border-t border-zinc-200 dark:border-zinc-800 p-6">
-              <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[520px] overflow-y-auto scrollbar-hide">
+              <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[520px] overflow-y-auto">
                 {RESUME_TXT}
               </pre>
             </div>
@@ -122,23 +122,23 @@ const ResumeSection = () => {
 };
 
 const Footer = () => (
-  <footer className="py-20 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
+  <footer className="pt-20 pb-28 md:pb-20 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
     <div className="max-w-6xl mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div className="col-span-1 md:col-span-2">
           <h2 className="text-2xl font-bold font-serif mb-4 text-zinc-900 dark:text-zinc-50">{SITE_DATA.name}</h2>
           <p className="text-zinc-500 dark:text-zinc-400 max-w-sm mb-6">
-            Building consumer fintech products with an evidence-first approach. Let's build something valuable together.
+            Product work across cards, loans, APIs, recommendation logic, and the operating details behind them.
           </p>
           <div className="flex items-center gap-4">
             <div className="flex gap-4">
-              <a href={`mailto:${SITE_DATA.email}`} className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+              <a href={`mailto:${SITE_DATA.email}`} className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                 <Mail className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
-              <a href={SITE_DATA.linkedin} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+              <a href={SITE_DATA.linkedin} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                 <Linkedin className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
-              <a href={SITE_DATA.github} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+              <a href={SITE_DATA.github} target="_blank" rel="noreferrer" className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                 <Github className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
               </a>
             </div>
@@ -163,7 +163,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-600 gap-4">
-        <p>© {new Date().getFullYear()} {SITE_DATA.name}. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} {SITE_DATA.name}. All rights reserved.</p>
         <p>Built with React, Framer Motion & Tailwind CSS.</p>
       </div>
     </div>
@@ -212,7 +212,7 @@ const PortfolioContent = () => {
           </div>
           <a 
             href={`mailto:${SITE_DATA.email}`} 
-            className="hidden sm:inline-flex items-center gap-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 px-4 py-2 rounded-lg text-xs font-bold hover:bg-zinc-800 dark:hover:bg-white transition-all shadow-sm"
+            className="hidden sm:inline-flex items-center gap-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 px-4 py-2 rounded-lg text-xs font-bold hover:bg-zinc-800 dark:hover:bg-white transition-colors shadow-sm"
           >
             Contact
           </a>
@@ -236,13 +236,13 @@ const PortfolioContent = () => {
 
       <Footer />
 
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 md:hidden">
-        <div className="bg-zinc-900/90 dark:bg-zinc-100/90 text-white dark:text-zinc-900 px-6 py-2.5 rounded-full shadow-2xl backdrop-blur-md text-[10px] font-bold uppercase tracking-widest flex gap-4 border border-white/10 dark:border-black/10">
+      <nav className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:hidden" aria-label="Mobile section navigation">
+        <div className="bg-zinc-900/90 dark:bg-zinc-100/90 text-white dark:text-zinc-900 px-4 py-2.5 rounded-lg shadow-md backdrop-blur-md text-[10px] font-bold uppercase tracking-widest flex gap-4 border border-white/10 dark:border-black/10">
           <a href="#work">Work</a>
           <a href="#how-i-work">Principles</a>
           <a href="#resume">CV</a>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };

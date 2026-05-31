@@ -28,7 +28,7 @@ export const SelectedWorkSection = () => (
         {WORK_DATA.map((cs, index) => {
           const { Icon, accent, tag, asset, alt, proof } = getCardVisuals(cs.id || '');
           return (
-            <article key={cs.id} className="group grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-0 border border-zinc-200 dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-950 overflow-hidden transition-all hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg">
+            <article key={cs.id} className="group grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-0 border border-zinc-200 dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-950 overflow-hidden transition-colors hover:border-zinc-300 dark:hover:border-zinc-700">
               <div className="p-6 bg-zinc-50 dark:bg-zinc-900/50 border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-zinc-800">
                 <div className="flex items-center justify-between mb-8">
                   <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{String(index + 1).padStart(2, '0')}</span>
@@ -50,7 +50,7 @@ export const SelectedWorkSection = () => (
                     <img
                       src={asset}
                       alt={alt}
-                      className="w-full aspect-[16/10] object-cover"
+                      className="w-full aspect-[16/10] object-contain p-2"
                       loading="lazy"
                     />
                   </div>

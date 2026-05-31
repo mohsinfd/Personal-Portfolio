@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-all hover:bg-zinc-200 dark:hover:bg-zinc-700"
+      className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-700"
       aria-label="Toggle theme"
     >
       {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -72,7 +72,7 @@ const CollectionPage = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-50px" }}
                       transition={{ delay: (index % 8) * 0.05 }}
-                      className="group relative flex flex-col bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/50 rounded-2xl overflow-hidden hover:border-zinc-300 dark:hover:border-zinc-700/50 transition-all duration-300"
+                      className="group relative flex flex-col bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/50 rounded-lg overflow-hidden hover:border-zinc-300 dark:hover:border-zinc-700/50 transition-colors duration-300"
                     >
                       <div className="aspect-[4/3] bg-zinc-100 dark:bg-zinc-900/50 p-6 flex items-center justify-center relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-t from-zinc-200/50 dark:from-zinc-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
@@ -80,7 +80,7 @@ const CollectionPage = () => {
                           src={skin.imageUrl} 
                           alt={skin.name}
                           referrerPolicy="no-referrer"
-                          className="w-full h-full object-contain filter drop-shadow-xl group-hover:scale-110 transition-transform duration-500 ease-out relative z-20"
+                          className="w-full h-full object-contain filter drop-shadow-xl group-hover:scale-105 transition-transform duration-500 ease-out relative z-20"
                           loading="lazy"
                         />
                       </div>

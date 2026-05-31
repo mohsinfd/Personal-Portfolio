@@ -28,11 +28,17 @@ export const Hero = () => (
             {SITE_DATA.philosophy}
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
-            {SITE_DATA.proofStrip.map((proof) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 mb-10 overflow-hidden rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900/50">
+            {SITE_DATA.proofStrip.map((proof, index) => (
               <div
                 key={proof.title}
-                className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-4 sm:p-5"
+                className={`p-4 sm:p-5 border-zinc-200 dark:border-zinc-800 ${
+                  index < 2 ? 'sm:border-b' : ''
+                } ${
+                  index % 2 === 0 ? 'sm:border-r' : ''
+                } ${index < SITE_DATA.proofStrip.length - 1 ? 'border-b' : ''} ${
+                  index === 2 ? 'sm:border-b-0' : ''
+                }`}
               >
                 <h2 className="text-sm font-semibold text-zinc-950 dark:text-zinc-50 mb-2">
                   {proof.title}
@@ -45,10 +51,10 @@ export const Hero = () => (
           </div>
 
           <div className="flex flex-wrap items-center gap-3 mb-10">
-            <a href="#work" className="inline-flex items-center gap-2 bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 px-6 py-3 rounded-lg font-medium transition-transform hover:-translate-y-0.5 shadow-lg shadow-zinc-900/10 dark:shadow-white/10">
+            <a href="#work" className="inline-flex items-center gap-2 bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 px-6 py-3 rounded-lg font-medium transition-colors hover:bg-zinc-800 dark:hover:bg-white shadow-sm">
               <Briefcase className="w-4 h-4" /> View Selected Work
             </a>
-            <a href={SITE_DATA.cv} className="inline-flex items-center gap-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 px-6 py-3 rounded-lg font-medium transition-all hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:-translate-y-0.5">
+            <a href={SITE_DATA.cv} className="inline-flex items-center gap-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 px-6 py-3 rounded-lg font-medium transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800">
               <Download className="w-4 h-4" /> Download Resume
             </a>
           </div>

@@ -16,7 +16,7 @@ export const WritingSection = () => (
         {WRITING_DATA.map((post) => (
           <article
             key={post.title}
-            className="bg-white dark:bg-zinc-950 p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+            className="bg-white dark:bg-zinc-950 p-6 rounded-lg border border-zinc-200 dark:border-zinc-800"
           >
             <div className="mb-5 flex items-center justify-between gap-4">
               <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-zinc-400 dark:text-zinc-500">

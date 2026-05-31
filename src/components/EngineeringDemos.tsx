@@ -26,7 +26,7 @@ export const EngineeringDemos = () => {
               href={SITE_DATA.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-white/15 bg-white/5 hover:bg-white hover:text-zinc-950 text-white px-5 py-3 rounded-lg font-bold transition-all text-sm"
+              className="inline-flex items-center gap-3 border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 text-white px-5 py-3 rounded-lg font-bold transition-colors text-sm"
             >
               <Github className="w-4 h-4" /> See all repositories
             </a>
@@ -35,7 +35,7 @@ export const EngineeringDemos = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-white/10 border border-white/10">
           {visibleProjects.map((project) => (
-            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[280px]">
+            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[280px] transition-colors hover:bg-zinc-900/70">
               <div className="flex items-start justify-between gap-4 mb-7">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 border border-white/10 rounded-md px-2.5 py-1.5">
                   {project.artifactType}
