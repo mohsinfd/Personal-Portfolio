@@ -1,0 +1,34 @@
+<svg width="760" height="520" viewBox="0 0 760 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FDF4"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="520" rx="26" fill="url(#bg)"/>
+  <rect x="48" y="48" width="664" height="424" rx="22" fill="#FFFFFF" stroke="#BBF7D0"/>
+
+  <text x="84" y="98" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750">Systems at Scale</text>
+  <text x="84" y="126" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13">proof grid for regulated flows, loyalty scale, and internal tooling</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="84" y="170" width="270" height="110" rx="16" fill="#F0FDF4" stroke="#86EFAC"/>
+    <text x="112" y="211" fill="#166534" font-size="30" font-weight="800">150+</text>
+    <text x="112" y="244" fill="#15803D" font-size="13">country KYC and conversion flows</text>
+
+    <rect x="406" y="170" width="270" height="110" rx="16" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="434" y="211" fill="#0F172A" font-size="30" font-weight="800">700M+</text>
+    <text x="434" y="244" fill="#64748B" font-size="13">profile-scale loyalty products</text>
+
+    <rect x="84" y="314" width="270" height="92" rx="16" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="112" y="352" fill="#0F172A" font-size="16" font-weight="750">Enterprise SaaS</text>
+    <text x="112" y="377" fill="#64748B" font-size="13">MVP to real client adoption</text>
+
+    <rect x="406" y="314" width="270" height="92" rx="16" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="434" y="352" fill="#0F172A" font-size="16" font-weight="750">Operating systems</text>
+    <text x="434" y="377" fill="#64748B" font-size="13">internal tools, support paths, fallbacks</text>
+  </g>
+
+  <path d="M380 174V404" stroke="#D4D4D8" stroke-dasharray="5 9"/>
+  <path d="M86 298H674" stroke="#D4D4D8" stroke-dasharray="5 9"/>
+</svg>

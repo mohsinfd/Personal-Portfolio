@@ -10,6 +10,7 @@ export const WritingSection = () => (
         icon={BookOpen}
         title="Notes on Product and Systems"
         subtitle="Drafts I plan to turn into essays. For now, they stay as notes."
+        eyebrow="05 / Notes"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">

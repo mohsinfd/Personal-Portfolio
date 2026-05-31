@@ -50,6 +50,7 @@ export const ExperienceTimeline = () => {
           icon={Milestone}
           title="Career Arc" 
           subtitle="A compact timeline. The resume carries the details."
+          eyebrow="03 / Career"
         />
         <div className="mt-10 space-y-12">
           {categories.map((category) => {

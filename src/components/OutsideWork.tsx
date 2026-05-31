@@ -9,6 +9,7 @@ export const OutsideWork = () => (
       <SectionHeader 
         icon={User}
         title="Outside Work" 
+        eyebrow="06 / Personal"
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="space-y-12">

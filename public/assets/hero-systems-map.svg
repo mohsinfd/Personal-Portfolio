@@ -60,6 +60,14 @@
 
   <path d="M366 190C392 190 402 190 428 190" stroke="#0F172A" stroke-width="3"/>
   <path d="M694 190C734 190 750 190 790 190" stroke="#0F172A" stroke-width="3"/>
+  <path d="M366 190C392 190 402 190 428 190H694C734 190 750 190 790 190" stroke="#6366F1" stroke-width="4" stroke-linecap="round" stroke-dasharray="72 620" opacity="0">
+    <animate attributeName="stroke-dashoffset" values="620;0" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.42;0" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <circle r="7" fill="#6366F1" opacity="0">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M366 190C392 190 402 190 428 190H694C734 190 750 190 790 190"/>
+    <animate attributeName="opacity" values="0;0.55;0" dur="8s" repeatCount="indefinite"/>
+  </circle>
   <circle cx="428" cy="190" r="6" fill="#0F172A"/>
   <circle cx="694" cy="190" r="6" fill="#0F172A"/>
 
@@ -94,5 +102,5 @@
   <circle cx="776" cy="399" r="6" fill="#0F172A"/>
 
   <rect x="148" y="586" width="892" height="52" rx="14" fill="#FAFAFA" stroke="#E4E4E7"/>
-  <text x="178" y="619" fill="#52525B" font-family="JetBrains Mono, monospace" font-size="14">problem → mechanism → proof → distribution → operating cadence</text>
+  <text x="178" y="619" fill="#52525B" font-family="JetBrains Mono, monospace" font-size="14">problem -> mechanism -> proof -> distribution -> operating cadence</text>
 </svg>

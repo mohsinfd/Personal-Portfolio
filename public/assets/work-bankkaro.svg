@@ -1,26 +1,52 @@
 <svg width="760" height="520" viewBox="0 0 760 520" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="520"><stop stop-color="#EFF6FF"/><stop offset="1" stop-color="#F8FAFC"/></linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1E3A8A" flood-opacity="0.12"/></filter>
+    <linearGradient id="paper" x1="0" y1="0" x2="760" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#1E3A8A" flood-opacity="0.10"/>
+    </filter>
   </defs>
-  <rect width="760" height="520" rx="28" fill="url(#bg)"/>
-  <rect x="54" y="54" width="652" height="412" rx="24" fill="white" stroke="#BFDBFE"/>
-  <text x="90" y="104" fill="#0F172A" font-family="Inter, Arial" font-size="20" font-weight="750">BankKaro / great.cards</text>
-  <text x="90" y="132" fill="#64748B" font-family="Inter, Arial" font-size="13">consumer fintech recommendation system</text>
-  <g filter="url(#s)">
-    <rect x="90" y="188" width="148" height="108" rx="18" fill="#DBEAFE" stroke="#93C5FD"/>
-    <text x="120" y="229" fill="#1E3A8A" font-family="Inter, Arial" font-size="16" font-weight="700">Spend</text>
-    <text x="120" y="257" fill="#2563EB" font-family="Inter, Arial" font-size="12">category signal</text>
-    <rect x="300" y="164" width="164" height="156" rx="20" fill="#111827"/>
-    <text x="332" y="220" fill="white" font-family="Inter, Arial" font-size="17" font-weight="700">Decision</text>
-    <text x="332" y="249" fill="#A1A1AA" font-family="Inter, Arial" font-size="12">rupee math + ranking</text>
-    <rect x="526" y="188" width="144" height="108" rx="18" fill="#F8FAFC" stroke="#CBD5E1"/>
-    <text x="556" y="229" fill="#0F172A" font-family="Inter, Arial" font-size="16" font-weight="700">Apply</text>
-    <text x="556" y="257" fill="#64748B" font-family="Inter, Arial" font-size="12">bank API rail</text>
+  <rect width="760" height="520" rx="26" fill="url(#paper)"/>
+  <rect x="44" y="44" width="672" height="432" rx="22" fill="#FFFFFF" stroke="#BFDBFE"/>
+
+  <text x="78" y="92" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750">BankKaro / great.cards</text>
+  <text x="78" y="121" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13">API docs, recommendation logic, and lender journeys in one product surface</text>
+
+  <g filter="url(#soft)">
+    <rect x="78" y="164" width="178" height="210" rx="18" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="104" y="202" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">API reference</text>
+    <text x="104" y="228" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">POST /cards/apply</text>
+    <text x="104" y="252" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">GET /offers</text>
+    <text x="104" y="276" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">rules + fallbacks</text>
+    <rect x="104" y="312" width="112" height="8" rx="4" fill="#DBEAFE"/>
+    <rect x="104" y="334" width="78" height="8" rx="4" fill="#DBEAFE"/>
   </g>
-  <path d="M238 242H300M464 242H526" stroke="#2563EB" stroke-width="4"/>
-  <circle cx="268" cy="242" r="7" fill="#2563EB"/>
-  <circle cx="494" cy="242" r="7" fill="#2563EB"/>
-  <rect x="90" y="370" width="580" height="44" rx="12" fill="#0F172A"/>
-  <text x="118" y="398" fill="#DBEAFE" font-family="JetBrains Mono, monospace" font-size="13">one logic layer supporting recommendations, demos, and distribution</text>
+
+  <g filter="url(#soft)">
+    <rect x="306" y="146" width="202" height="246" rx="22" fill="#111827"/>
+    <text x="338" y="192" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="750">decision engine</text>
+    <text x="338" y="221" fill="#A1A1AA" font-family="Inter, Arial, sans-serif" font-size="12">spend, fees, rewards, eligibility</text>
+    <rect x="338" y="258" width="138" height="12" rx="6" fill="#1D4ED8"/>
+    <rect x="338" y="288" width="92" height="12" rx="6" fill="#38BDF8"/>
+    <rect x="338" y="318" width="118" height="12" rx="6" fill="#64748B"/>
+    <text x="338" y="360" fill="#DBEAFE" font-family="JetBrains Mono, monospace" font-size="11">rupee-level trade-offs</text>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="558" y="178" width="126" height="164" rx="18" fill="#EFF6FF" stroke="#93C5FD"/>
+    <text x="584" y="216" fill="#1E3A8A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">lender</text>
+    <text x="584" y="240" fill="#2563EB" font-family="Inter, Arial, sans-serif" font-size="12">SBI / Axis</text>
+    <text x="584" y="264" fill="#2563EB" font-family="Inter, Arial, sans-serif" font-size="12">partner APIs</text>
+    <rect x="584" y="292" width="70" height="8" rx="4" fill="#BFDBFE"/>
+  </g>
+
+  <path d="M256 260H306" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <path d="M508 260H558" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="282" cy="260" r="5" fill="#2563EB"/>
+  <circle cx="532" cy="260" r="5" fill="#2563EB"/>
+
+  <rect x="78" y="414" width="606" height="34" rx="10" fill="#EFF6FF" stroke="#DBEAFE"/>
+  <text x="102" y="436" fill="#1D4ED8" font-family="JetBrains Mono, monospace" font-size="12">one logic layer: recommendations, demos, whitelabel launches, distribution</text>
 </svg>

@@ -1,25 +1,40 @@
 <svg width="760" height="520" viewBox="0 0 760 520" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="520"><stop stop-color="#F5F3FF"/><stop offset="1" stop-color="#18181B"/></linearGradient>
-    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#A78BFA" flood-opacity="0.45"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18181B"/>
+      <stop offset="1" stop-color="#09090B"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#8B5CF6" flood-opacity="0.28"/>
+    </filter>
   </defs>
-  <rect width="760" height="520" rx="28" fill="url(#bg)"/>
-  <rect x="56" y="58" width="648" height="404" rx="24" fill="#111113" fill-opacity="0.92" stroke="#3F3F46"/>
-  <text x="92" y="110" fill="#FAFAFA" font-family="Inter, Arial" font-size="20" font-weight="750">FanClash</text>
-  <text x="92" y="138" fill="#A1A1AA" font-family="Inter, Arial" font-size="13">live eSports mechanics and retention loops</text>
-  <path d="M104 344C168 246 248 292 306 204C370 106 456 162 514 116C566 74 616 80 660 62" stroke="#A78BFA" stroke-width="4" filter="url(#glow)"/>
-  <path d="M104 380C196 350 250 360 322 304C404 240 474 260 546 216C606 180 632 166 662 164" stroke="#34D399" stroke-width="3"/>
-  <g fill="#27272A" stroke="#3F3F46">
-    <rect x="92" y="174" width="150" height="68" rx="14"/>
-    <rect x="490" y="306" width="156" height="72" rx="14"/>
+  <rect width="760" height="520" rx="26" fill="url(#bg)"/>
+  <rect x="46" y="46" width="668" height="428" rx="22" fill="#111113" stroke="#3F3F46"/>
+
+  <text x="82" y="94" fill="#FAFAFA" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750">FanClash</text>
+  <text x="82" y="122" fill="#A1A1AA" font-family="Inter, Arial, sans-serif" font-size="13">live fantasy loops, scoring data, and engagement rhythm</text>
+
+  <rect x="82" y="164" width="596" height="196" rx="18" fill="#18181B" stroke="#3F3F46"/>
+  <path d="M126 306C178 244 224 282 278 226C336 166 392 198 444 154C494 112 544 142 604 104" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M126 326C196 314 236 330 302 288C372 244 422 252 492 212C548 180 584 178 634 170" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+
+  <g>
+    <rect x="106" y="186" width="138" height="70" rx="12" fill="#27272A" stroke="#3F3F46"/>
+    <text x="130" y="217" fill="#F4F4F5" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="750">live pick</text>
+    <text x="130" y="238" fill="#A1A1AA" font-family="Inter, Arial, sans-serif" font-size="11">momentum + context</text>
   </g>
-  <text x="120" y="205" fill="#F4F4F5" font-family="Inter, Arial" font-size="15" font-weight="700">live loop</text>
-  <text x="120" y="226" fill="#A1A1AA" font-family="Inter, Arial" font-size="11">engagement rhythm</text>
-  <text x="520" y="339" fill="#F4F4F5" font-family="Inter, Arial" font-size="15" font-weight="700">scoring rail</text>
-  <text x="520" y="360" fill="#A1A1AA" font-family="Inter, Arial" font-size="11">structured game data</text>
-  <circle cx="306" cy="204" r="9" fill="#A78BFA"/>
-  <circle cx="514" cy="116" r="9" fill="#A78BFA"/>
-  <circle cx="322" cy="304" r="7" fill="#34D399"/>
-  <circle cx="546" cy="216" r="7" fill="#34D399"/>
-  <text x="92" y="430" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="13">static fantasy → real-time game-native product system</text>
+
+  <g>
+    <rect x="492" y="276" width="150" height="70" rx="12" fill="#27272A" stroke="#3F3F46"/>
+    <text x="516" y="307" fill="#F4F4F5" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="750">scoring feed</text>
+    <text x="516" y="328" fill="#A1A1AA" font-family="Inter, Arial, sans-serif" font-size="11">game events to points</text>
+  </g>
+
+  <circle cx="278" cy="226" r="8" fill="#A78BFA"/>
+  <circle cx="444" cy="154" r="8" fill="#A78BFA"/>
+  <circle cx="302" cy="288" r="6" fill="#34D399"/>
+  <circle cx="492" cy="212" r="6" fill="#34D399"/>
+
+  <rect x="82" y="404" width="596" height="36" rx="10" fill="#18181B" stroke="#3F3F46"/>
+  <text x="108" y="427" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="12">static fantasy -> live gameplay loop -> retention signal</text>
 </svg>

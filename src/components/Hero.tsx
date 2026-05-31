@@ -32,7 +32,7 @@ export const Hero = () => (
             {SITE_DATA.proofStrip.map((proof, index) => (
               <div
                 key={proof.title}
-                className={`p-4 sm:p-5 border-zinc-200 dark:border-zinc-800 ${
+                className={`p-4 sm:p-5 border-zinc-200 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900 ${
                   index < 2 ? 'sm:border-b' : ''
                 } ${
                   index % 2 === 0 ? 'sm:border-r' : ''
@@ -76,7 +76,7 @@ export const Hero = () => (
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="w-full overflow-hidden bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg shadow-sm"
+          className="quiet-pulse w-full overflow-hidden bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg shadow-sm"
         >
           <div className="bg-zinc-50 dark:bg-zinc-950/70 border-b border-zinc-200 dark:border-zinc-800 p-3">
             <img

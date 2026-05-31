@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { ChevronDown, ExternalLink, Github, Terminal } from 'lucide-react';
 import { DEMOS_DATA } from '../data/demos';
 import { SITE_DATA } from '../data/site';
@@ -10,8 +11,18 @@ export const EngineeringDemos = () => {
   return (
     <section id="demos" className="py-24 bg-zinc-950 text-white transition-colors">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 mb-14">
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 mb-14"
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.45, ease: 'easeOut' }}
+        >
           <div>
+            <div className="mb-6 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] text-zinc-500">
+              <span>04 / Artifacts</span>
+              <span className="h-px flex-1 bg-white/10" />
+            </div>
             <div className="flex items-center gap-3 mb-6">
               <Terminal className="w-5 h-5 text-zinc-400" />
               <span className="text-xs font-bold uppercase tracking-[0.28em] text-zinc-500">Artifacts</span>
@@ -31,11 +42,11 @@ export const EngineeringDemos = () => {
               <Github className="w-4 h-4" /> See all repositories
             </a>
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-white/10 border border-white/10">
           {visibleProjects.map((project) => (
-            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[280px] transition-colors hover:bg-zinc-900/70">
+            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[280px] border border-transparent transition-colors hover:bg-zinc-900/70 dark:hover:border-indigo-400/20 dark:hover:shadow-[0_0_0_1px_rgba(129,140,248,0.08)]">
               <div className="flex items-start justify-between gap-4 mb-7">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 border border-white/10 rounded-md px-2.5 py-1.5">
                   {project.artifactType}
@@ -50,6 +61,9 @@ export const EngineeringDemos = () => {
               </div>
 
               <h3 className="text-xl font-bold font-serif text-zinc-50 mb-3">{project.title}</h3>
+              {project.output && (
+                <p className="mb-4 font-mono text-[11px] text-zinc-500">{project.output}</p>
+              )}
               <p className="text-sm text-zinc-400 leading-relaxed mb-7">{project.description}</p>
 
               <div className="mt-auto">

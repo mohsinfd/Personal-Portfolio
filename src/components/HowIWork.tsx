@@ -12,6 +12,7 @@ export const HowIWork = () => (
             icon={Target}
             title={SITE_DATA.howIWork.headline}
             subtitle={SITE_DATA.howIWork.subheading}
+            eyebrow="02 / Principles"
           />
           {SITE_DATA.howIWork.closingLine && (
             <p className="hidden lg:block mt-12 text-xl font-serif italic leading-relaxed text-zinc-700 dark:text-zinc-300">

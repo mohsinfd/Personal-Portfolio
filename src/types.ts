@@ -43,6 +43,7 @@ export interface GitHubProject {
   description: string;
   tech: string[];
   artifactType?: string;
+  output?: string;
   repoUrl: string;
   cta: string;
 }

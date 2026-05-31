@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import CollectionPage from './CollectionPage';
@@ -13,7 +14,8 @@ import {
   FileText,
   MapPin,
   Sun,
-  Moon
+  Moon,
+  ChevronDown
 } from 'lucide-react';
 import { SITE_DATA } from './data/site';
 import { RESUME_TXT } from './constants';
@@ -46,7 +48,18 @@ const ThemeToggle = () => {
 const NavLink = ({ href, children, active }: { href: string; children?: React.ReactNode; active?: boolean }) => (
   <a 
     href={href} 
-    className={`text-sm font-medium transition-colors hover:text-indigo-600 dark:hover:text-indigo-400 ${active ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-500 dark:text-zinc-400'}`}
+    className={`group relative inline-flex items-center gap-2 py-1 text-sm font-medium transition-colors hover:text-zinc-950 dark:hover:text-zinc-100 ${active ? 'text-zinc-950 dark:text-zinc-100' : 'text-zinc-500 dark:text-zinc-400'}`}
+  >
+    <span className={`h-1 w-1 rounded-full bg-indigo-500 transition-opacity ${active ? 'opacity-100' : 'opacity-0'}`} />
+    {children}
+    <span className={`absolute -bottom-1 left-3 h-px bg-indigo-500 transition-all duration-300 ${active ? 'w-[calc(100%-0.75rem)] opacity-100' : 'w-0 opacity-0'}`} />
+  </a>
+);
+
+const MobileNavLink = ({ href, children, active }: { href: string; children?: React.ReactNode; active?: boolean }) => (
+  <a
+    href={href}
+    className={`rounded-md px-2 py-1 transition-colors ${active ? 'bg-white/10 text-white dark:bg-black/10 dark:text-zinc-950' : 'text-zinc-300 dark:text-zinc-700'}`}
   >
     {children}
   </a>
@@ -54,6 +67,7 @@ const NavLink = ({ href, children, active }: { href: string; children?: React.Re
 
 const ResumeSection = () => {
   const [copied, setCopied] = useState(false);
+  const [resumeOpen, setResumeOpen] = useState(false);
   const resumeHighlights = [
     { label: 'Operating range', value: '0-to-1 fintech platforms, API products, recommendations, KYC, and AI-led prototyping' },
     { label: 'Recent scope', value: 'BankKaro and great.cards across cards, loans, partner APIs, calculators, and whitelabel launches' },
@@ -75,21 +89,25 @@ const ResumeSection = () => {
             icon={FileText}
             title="Resume" 
             subtitle="Quick read, PDF, and plain text."
+            eyebrow="08 / Resume"
           />
-          <div className="flex gap-3 md:mb-10">
-            <button 
-              onClick={copyToClipboard}
-              className="inline-flex items-center gap-2 bg-white dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-800"
-            >
-              {copied ? <CheckCircle2 className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-              {copied ? 'Copied' : 'Copy Text'}
-            </button>
-            <a 
-              href={SITE_DATA.cv} 
-              className="inline-flex items-center gap-2 bg-indigo-600 dark:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors shadow-sm"
-            >
-              <Download className="w-4 h-4" /> Download PDF
-            </a>
+          <div className="flex flex-col gap-3 md:items-end md:mb-10">
+            <p className="text-[11px] font-mono text-zinc-400 dark:text-zinc-500">Updated 2026 · Plain text + PDF</p>
+            <div className="flex gap-3">
+              <button
+                onClick={copyToClipboard}
+                className="inline-flex items-center gap-2 bg-white dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors border border-zinc-200 dark:border-zinc-800"
+              >
+                {copied ? <CheckCircle2 className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                {copied ? 'Copied' : 'Copy Text'}
+              </button>
+              <a
+                href={SITE_DATA.cv}
+                className="inline-flex items-center gap-2 bg-indigo-600 dark:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors shadow-sm"
+              >
+                <Download className="w-4 h-4" /> Download PDF
+              </a>
+            </div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-800 mb-8">
@@ -105,16 +123,35 @@ const ResumeSection = () => {
           ))}
         </div>
         <Card className="bg-white dark:bg-zinc-950 p-0 border-dashed dark:border-zinc-800 overflow-hidden">
-          <details>
-            <summary className="cursor-pointer px-6 py-5 text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
-              Show plain-text resume
-            </summary>
-            <div className="border-t border-zinc-200 dark:border-zinc-800 p-6">
-              <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[520px] overflow-y-auto">
-                {RESUME_TXT}
-              </pre>
-            </div>
-          </details>
+          <button
+            type="button"
+            aria-expanded={resumeOpen}
+            onClick={() => setResumeOpen((open) => !open)}
+            className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+          >
+            <span>
+              <span className="block text-sm font-bold text-zinc-800 dark:text-zinc-200">Show plain-text resume</span>
+              <span className="mt-1 block text-xs text-zinc-500 dark:text-zinc-500">For copying or plain-text review.</span>
+            </span>
+            <ChevronDown className={`h-4 w-4 flex-shrink-0 text-zinc-400 transition-transform duration-300 ${resumeOpen ? 'rotate-180' : ''}`} />
+          </button>
+          <AnimatePresence initial={false}>
+            {resumeOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.28, ease: 'easeOut' }}
+                className="overflow-hidden border-t border-zinc-200 dark:border-zinc-800"
+              >
+                <div className="p-6">
+                  <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[520px] overflow-y-auto">
+                    {RESUME_TXT}
+                  </pre>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </Card>
       </div>
     </section>
@@ -172,6 +209,7 @@ const Footer = () => (
 
 const PortfolioContent = () => {
   const [activeSection, setActiveSection] = useState('top');
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -192,9 +230,29 @@ const PortfolioContent = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0);
+    };
+
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+
+    return () => {
+      window.removeEventListener('scroll', updateProgress);
+      window.removeEventListener('resize', updateProgress);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 transition-colors">
+        <div
+          className="absolute bottom-0 left-0 h-px w-full origin-left bg-indigo-500/70 transition-transform duration-150"
+          style={{ transform: `scaleX(${scrollProgress})` }}
+        />
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#top" className="font-serif font-bold text-xl tracking-tight text-zinc-900 dark:text-zinc-50">
             MD.
@@ -238,9 +296,9 @@ const PortfolioContent = () => {
 
       <nav className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:hidden" aria-label="Mobile section navigation">
         <div className="bg-zinc-900/90 dark:bg-zinc-100/90 text-white dark:text-zinc-900 px-4 py-2.5 rounded-lg shadow-md backdrop-blur-md text-[10px] font-bold uppercase tracking-widest flex gap-4 border border-white/10 dark:border-black/10">
-          <a href="#work">Work</a>
-          <a href="#how-i-work">Principles</a>
-          <a href="#resume">CV</a>
+          <MobileNavLink href="#work" active={activeSection === 'work'}>Work</MobileNavLink>
+          <MobileNavLink href="#how-i-work" active={activeSection === 'how-i-work'}>Principles</MobileNavLink>
+          <MobileNavLink href="#resume" active={activeSection === 'resume'}>CV</MobileNavLink>
         </div>
       </nav>
     </div>
