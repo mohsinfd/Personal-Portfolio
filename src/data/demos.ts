@@ -12,6 +12,16 @@ export const DEMOS_DATA: GitHubProject[] = [
     cta: "View Repo"
   },
   {
+    title: "great.cards",
+    subtitle: "Spend-based card recommendation product",
+    artifactType: "Recommendation Product",
+    output: "live product: great.cards",
+    description: "A rupee-aware card recommendation surface built around spend patterns, category calculators, card economics, and clearer trade-offs.",
+    tech: ["Product Logic", "Fintech", "Recommendations"],
+    repoUrl: "https://great.cards",
+    cta: "View great.cards"
+  },
+  {
     title: "BK Validator",
     subtitle: "Benefit-data consistency auditor",
     artifactType: "Data Auditor",
@@ -39,16 +49,6 @@ export const DEMOS_DATA: GitHubProject[] = [
     description: "A Python toolkit for running card recommendations from spreadsheet inputs, with column mapping, retries, output shaping, and a Streamlit dashboard.",
     tech: ["Python", "Streamlit", "FastAPI"],
     repoUrl: "https://github.com/mohsinfd/cgonck",
-    cta: "View Repo"
-  },
-  {
-    title: "Meld",
-    subtitle: "Artifact-first product workspace",
-    artifactType: "Product Workspace",
-    output: "public repo: workspace",
-    description: "A local-first AI workspace that turns context and objectives into product artifacts: PRDs, edge cases, flow reviews, and implementation tickets.",
-    tech: ["Next.js", "Zod", "OpenAI"],
-    repoUrl: "https://github.com/mohsinfd/meld",
     cta: "View Repo"
   }
 ];
