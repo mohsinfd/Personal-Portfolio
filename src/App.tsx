@@ -57,7 +57,7 @@ const ResumeSection = () => {
   const resumeHighlights = [
     { label: 'Operating range', value: '0-to-1 fintech platforms, API products, recommendations, KYC, and AI-led prototyping' },
     { label: 'Recent scope', value: 'BankKaro and great.cards across cards, loans, partner rails, calculators, and whitelabel launches' },
-    { label: 'Scale handled', value: '150+ country compliance flows and 700M+ profile-scale loyalty systems' },
+    { label: 'Scale handled', value: '150+ country compliance flows and 700M+ profile-scale loyalty products' },
     { label: 'Leadership mode', value: 'High-ownership product lead who can move from strategy to architecture, UX, launch, and iteration' },
   ];
 

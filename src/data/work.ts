@@ -14,7 +14,7 @@ export const WORK_DATA: SelectedWork[] = [
       "loan-side lender onboarding and API integrations",
       "AI-assisted whitelabel frontends for faster demos and partner conversations"
     ],
-    whyItMattered: "It gave the business more than a cleaner frontend. The same logic layer could support consumer recommendations, partner demos, whitelabel versions, and future distribution without rebuilding the product each time.",
+    whyItMattered: "It gave the business more than a cleaner frontend. The same logic layer could support consumer recommendations, partner demos, whitelabel versions, and future distribution without rebuilding the same work each time.",
     links: [
       { label: "great.cards", href: "https://great.cards" },
       { label: "BankKaro", href: "https://bankkaro.com" },
@@ -38,10 +38,10 @@ export const WORK_DATA: SelectedWork[] = [
     id: "systems-at-scale",
     title: "Systems at Scale",
     rootProblem: "At scale, products rarely fail because of one missing feature. They fail because too many fragile things are pretending to be one system: regulation, workflows, incentives, internal tools, and customer-facing experience.",
-    productBelief: "Scale made me less impressed by surface polish. The product only feels good when the hidden parts are reliable enough to stay out of the user's way.",
+    productBelief: "Scale made me less impressed by polished screens. The product only feels good when the hidden parts are reliable enough to stay out of the user's way.",
     built: [
       "KYC and conversion flows across 150+ countries",
-      "loyalty systems operating at 700M+ profile scale",
+      "loyalty products operating at 700M+ profile scale",
       "enterprise SaaS from MVP to real client adoption",
       "booking, internal tooling, and operational systems across different business environments"
     ],

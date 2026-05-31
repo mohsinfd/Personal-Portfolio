@@ -17,7 +17,7 @@ export const SITE_DATA = {
     },
     {
       title: "Worked at real scale",
-      detail: "Loyalty and profile systems operating around 700M+ users"
+      detail: "Loyalty and profile products operating around 700M+ users"
     },
     {
       title: "Comfortable at zero-to-one",

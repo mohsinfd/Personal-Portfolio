@@ -36,9 +36,9 @@ export const EXPERIENCE_DATA: Experience[] = [
     category: "Systems & Scale",
     description: [
       "Worked in products where trust depended as much on compliance, internal tools, and operating discipline as on customer-facing UX",
-      "Worked across money movement, enterprise SaaS, loyalty, internal tools, and booking funnels - different categories, but the same lesson: the hidden rails matter",
+      "Worked across money movement, enterprise SaaS, loyalty, internal tools, and booking funnels - different categories, but the same lesson: the hidden plumbing matters",
       "Learned how large products actually break, and how much of the important work is invisible until it fails",
-      "Those years made me less impressed by surface polish and more interested in whether the system underneath could actually hold up"
+      "Those years made me less impressed by polished screens and more interested in whether the system underneath could actually hold up"
     ]
   },
   {

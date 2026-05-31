@@ -1,13 +1,13 @@
 # Mohsin Dingankar Portfolio
 
-Personal portfolio for Mohsin Dingankar: product leadership, zero-to-one systems, consumer fintech, API-first platforms, recommendation systems, and builder-led product execution.
+Personal portfolio for Mohsin Dingankar: product leadership, zero-to-one fintech products, consumer fintech, API-first work, recommendation products, and builder-led product execution.
 
 This repository is intended to be public-facing. It contains the source for the portfolio site, sanitized resume copy, and lightweight static assets. Raw prompt history, private notes, and unpublished working documents are intentionally excluded.
 
 ## What It Shows
 
 - Selected product case studies and career narrative
-- Operating principles for ambiguous zero-to-one work
+- Operating principles for messy zero-to-one work
 - Engineering and prototype demos worth linking from a GitHub profile
 - A public resume section without unnecessary private contact details
 

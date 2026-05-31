@@ -5,8 +5,8 @@ import { SectionHeader } from './ui';
 
 const getCardVisuals = (id: string) => {
   switch (id) {
-    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform', asset: '/assets/work-bankkaro.svg', alt: 'BankKaro and great.cards product system diagram for spend signals, recommendation logic, and bank API rails', proof: [] };
-    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention', asset: '/assets/work-fanclash.svg', alt: 'FanClash product diagram showing live fantasy loops, engagement signals, and scoring systems', proof: [] };
+    case 'bankkaro': return { Icon: Building2, accent: 'text-blue-600 dark:text-blue-400', tag: 'Consumer fintech / platform', asset: '/assets/work-bankkaro.svg', alt: 'BankKaro and great.cards diagram for spend signals, recommendation logic, and bank API flows', proof: [] };
+    case 'fanclash': return { Icon: Gamepad2, accent: 'text-violet-600 dark:text-violet-400', tag: 'Live gaming / retention', asset: '/assets/work-fanclash.svg', alt: 'FanClash diagram showing live fantasy loops, engagement signals, and scoring logic', proof: [] };
     case 'systems-at-scale': return { Icon: Network, accent: 'text-emerald-600 dark:text-emerald-400', tag: 'Regulated systems / scale', asset: '', alt: '', proof: ['150+ countries', '700M+ profiles', 'KYC + loyalty', 'regulated flows'] };
     case 'founder-builder': return { Icon: Rocket, accent: 'text-orange-600 dark:text-orange-400', tag: 'Founder / operator', asset: '', alt: '', proof: ['200+ hotels', 'web + mobile', 'supply + ops', 'post-sale loops'] };
     default: return { Icon: Briefcase, accent: 'text-zinc-600 dark:text-zinc-400', tag: 'Selected work', asset: '', alt: '', proof: [] };
@@ -15,10 +15,10 @@ const getCardVisuals = (id: string) => {
 
 const problemTypes = [
   'unclear user decisions',
-  'weak rails under polished surfaces',
+  'weak plumbing under polished screens',
   'partner and API constraints',
   'teams needing structure before certainty',
-  'systems where UX, GTM, and operations are inseparable'
+  'places where UX, GTM, and operations are tangled together'
 ];
 
 export const SelectedWorkSection = () => (
@@ -28,7 +28,7 @@ export const SelectedWorkSection = () => (
         <SectionHeader
           icon={Briefcase}
           title="Selected Work"
-          subtitle="A few environments where the useful work was not just making screens better, but making the underlying system more legible."
+          subtitle="A few environments where the useful work was not just making screens better, but fixing what sat underneath."
         />
       </div>
 
