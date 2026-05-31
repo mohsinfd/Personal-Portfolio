@@ -2,7 +2,7 @@ import { Skin } from './types';
 
 export const INVENTORY_DATA: Skin[] = [
   {
-    name: "Hand Wraps | Cobalt Skulls",
+    name: "★ Hand Wraps | Cobalt Skulls",
     wear: "Minimal Wear",
     float: "0.12050",
     category: "Modern Premium",
@@ -10,7 +10,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_uJzsfVhSjuqqhsmsS-MmbD7LT7CAUV7T84sBohW60fg1srnZb6zsw2Ng41MmST43C1L7is9574CBKIh_q2Big_IMOdutcNRd_iuU13QD7PQAmaY"
   },
   {
-    name: "StatTrak Falchion Knife | Fade",
+    name: "★ StatTrak™ Falchion Knife | Fade",
     wear: "Factory New",
     float: "0.01234",
     category: "Legacy",
@@ -74,6 +74,14 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL8ypexwiFO0PC7ZKhoNM-BD26e_uMisbBWQiy3nAgq_TuGztmocHPEP1JzDZJ2QO9btBHqwdzuNe3rslGK3dhDm3mq3ykc6Hx1o7FV8lVG4HA"
   },
   {
+    name: "USP-S | The Traitor",
+    wear: "Factory New",
+    float: "0.05000",
+    category: "Iconic",
+    caption: "Covert",
+    imageUrl: "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLkjYbf7itX6vytbbZSJ-OsG3SA0tF-se9uSi2-lBMYvzSCkpu3eX7EP1MpApdwR-8NsxbukoXuNLnj4QOMiN8XzHn_iC8a7Spi4upRWb1lpPOCQNKXgA"
+  },
+  {
     name: "M4A1-S | Cyrex",
     wear: "Factory New",
     float: "0.02000",
@@ -114,7 +122,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL8ypexwjFS4_ega6F_H_eAMWrEwL9JveRqRyiMnBMjpi6RiIb8MhTKO1J5T89uQ7MJthO-l9CyPuqw5gLbi4JCmXqoh3hI6ixr6-sHWPEl_qfVhlzHNKp9v8dQcahjdg"
   },
   {
-    name: "StatTrak M4A1-S | Chantico's Fire",
+    name: "StatTrak™ M4A1-S | Chantico's Fire",
     wear: "Battle-Scarred",
     float: "0.80000",
     category: "Collector",
@@ -122,7 +130,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL8ypexwjFS4_ega6F_H_OGMWrEwL9lj_JmWiWnlBYioQKNn47vOGWTO1UjWJsmTLYI4ETpltXjN-7n4QHai99AmCv6j3xAuHo_6usEVKon5OSJ2JJSCfYl"
   },
   {
-    name: "StatTrak Glock-18 | Bullet Queen",
+    name: "StatTrak™ Glock-18 | Bullet Queen",
     wear: "Battle-Scarred",
     float: "0.75000",
     category: "Iconic",
@@ -130,7 +138,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL2kpnj9h1Y-s2pZKtuK6HLMXCR0-N3ueVsQRa7kBwxqnOHwt2hIyqRaVAnCpMhQeUN4EWwmtTgMejjsVGI3YoUyyuv2itPun1u_a9cBrKWi8Bu"
   },
   {
-    name: "StatTrak Glock-18 | Neo-Noir",
+    name: "StatTrak™ Glock-18 | Neo-Noir",
     wear: "Well-Worn",
     float: "0.40000",
     category: "Modern Premium",
@@ -138,7 +146,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL2kpnj9h1Y-s2pZKtuK8-dAW6C_uNztOh8Qme1wUsl52nQzN-hc3KTaAUiDsZzELMNs0TqwNKyZu62swzXj4xDnCuqkGoXudLX4DLr"
   },
   {
-    name: "StatTrak M4A4 | X-Ray",
+    name: "StatTrak™ M4A4 | X-Ray",
     wear: "Minimal Wear",
     float: "0.12000",
     category: "Legacy",
@@ -154,7 +162,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL3n5vh7h1c_M2oaalsM8-BD2uc2NF6ueZhW2exzUhz4WjWmNqpdy-UbwJxDJtxReEMtRGwloflP7m04wfXi94QyXj9kGoXuV3JhaXD"
   },
   {
-    name: "StatTrak AK-47 | The Empress",
+    name: "StatTrak™ AK-47 | The Empress",
     wear: "Well-Worn",
     float: "0.42000",
     category: "Iconic",
@@ -162,7 +170,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiVI0POlPPNSJf2DHGKD0tF7teVgWiT9wR4m52yBm47_d3uQPAVyCpF0QLJYtRSwkYazN-jj4QPbi9oTyH-r2jQJsHgrdiDckw"
   },
   {
-    name: "StatTrak M4A1-S | Printstream",
+    name: "StatTrak™ M4A1-S | Printstream",
     wear: "Minimal Wear",
     float: "0.08000",
     category: "Modern Premium",
@@ -186,7 +194,7 @@ export const INVENTORY_DATA: Skin[] = [
     imageUrl: "https://community.cloudflare.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwiYbf_jdk7uW-V6poL_6cB3WvzOtyufRkAS3rwE4h5D-Am939eXrGa1d1DJMlRe8Dshi-ltPvNbjr5AfWiIhHyX3gznQey5gGLwk"
   },
   {
-    name: "StatTrak Glock-18 | Wasteland Rebel",
+    name: "StatTrak™ Glock-18 | Wasteland Rebel",
     wear: "Field-Tested",
     float: "0.25000",
     category: "Collector",
@@ -239,7 +247,7 @@ export const INVENTORY_DATA: Skin[] = [
     float: "",
     category: "Medals & Coins",
     caption: "Extraordinary Collectible",
-    imageUrl: "/assets/cs2-10-year-coin.svg"
+    imageUrl: "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjTGtU9w9ZX35VDpD06pzJCypXJY6_SsP_M-c6PKWTCSle1w57FsHyiykER14WzRmIupdSmJLlh35U0JzaI"
   },
   {
     name: "5 Year Veteran Coin",
@@ -247,7 +255,7 @@ export const INVENTORY_DATA: Skin[] = [
     float: "",
     category: "Medals & Coins",
     caption: "Extraordinary Collectible",
-    imageUrl: "/assets/cs2-5-year-coin.svg"
+    imageUrl: "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJai2l-lQ8ndwMWvJjTC_FN05oT741epGR73mMHmpXEO7aT2bfE9I_KVCDTGx7gj4LE5F3iykU504TvVnN7_JWXXMFEPozcG1w"
   },
   {
     name: "Global Offensive Badge",
@@ -255,6 +263,6 @@ export const INVENTORY_DATA: Skin[] = [
     float: "",
     category: "Medals & Coins",
     caption: "Extraordinary Collectible",
-    imageUrl: "/assets/cs2-global-offensive-badge.svg"
+    imageUrl: "https://cdn.steamstatic.com/apps/730/icons/econ/status_icons/coin_csgo.5c504f054afa92278370758a211634c534268f64.png"
   }
 ];
