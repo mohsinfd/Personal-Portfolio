@@ -3,11 +3,10 @@ import { motion } from 'framer-motion';
 import { Briefcase, Download, Github, Linkedin, Mail, NotebookText } from 'lucide-react';
 import { SITE_DATA } from '../data/site';
 
-const operatingNotes = [
-  { label: 'Ambiguity', text: 'turning half-formed bets into something teams can react to' },
-  { label: 'Plumbing', text: 'making APIs, data, flows, and partner constraints behave as one system' },
-  { label: 'Signal', text: 'keeping the original problem intact as it moves through the org' },
-  { label: 'Launch', text: 'shipping the first useful version before the deck becomes the product' }
+const currentNotes = [
+  { label: 'Cards + loans', text: 'recommendation logic, calculators, lender APIs' },
+  { label: 'Partner work', text: 'docs, demos, whitelabel launches' },
+  { label: 'Build mode', text: 'quick prototypes before the idea becomes a roadmap' }
 ];
 
 export const Hero = () => (
@@ -84,12 +83,12 @@ export const Hero = () => (
           <div className="px-6 py-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-zinc-400 dark:text-zinc-500 mb-2">Operating Brief</p>
-              <h2 className="text-xl font-bold font-serif text-zinc-950 dark:text-zinc-50">Where I become useful</h2>
+              <h2 className="text-xl font-bold font-serif text-zinc-950 dark:text-zinc-50">Current workbench</h2>
             </div>
             <NotebookText className="w-5 h-5 text-zinc-400" />
           </div>
           <div className="divide-y divide-zinc-200 dark:divide-zinc-800">
-            {operatingNotes.map((note) => (
+            {currentNotes.map((note) => (
               <div key={note.label} className="grid grid-cols-1 sm:grid-cols-[92px_1fr] gap-2 sm:gap-4 px-5 sm:px-6 py-5">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">{note.label}</div>
                 <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">{note.text}</p>

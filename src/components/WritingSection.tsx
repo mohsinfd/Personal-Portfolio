@@ -9,7 +9,7 @@ export const WritingSection = () => (
       <SectionHeader
         icon={BookOpen}
         title="Notes on Product and Systems"
-        subtitle="Short field notes on product judgment, messy systems, APIs, decision products, and the work underneath the interface."
+        subtitle="Drafts I plan to turn into essays. For now, they stay as notes."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
@@ -35,10 +35,6 @@ export const WritingSection = () => (
           </article>
         ))}
       </div>
-
-      <p className="mt-8 text-sm text-zinc-500 dark:text-zinc-500 max-w-2xl">
-        These are being shaped from product memos, build logs, and real work. For now, the work sections carry the argument.
-      </p>
     </div>
   </section>
 );

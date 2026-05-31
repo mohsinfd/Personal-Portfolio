@@ -9,10 +9,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     isCurrent: true,
     category: "Platform Leadership",
     description: [
-      "Leading product across BankKaro and great.cards while the product, platform, and distribution model are still taking shape",
-      "Working across recommendation logic, lender rules, APIs, UX, and partner demos because these problems are connected in practice",
-      "Using AI-assisted prototyping to make ideas concrete earlier, instead of waiting for full build cycles",
-      "Trying to define the system without drifting too far away from the actual details"
+      "Leading BankKaro and great.cards while the product, platform, and distribution model are still taking shape."
     ]
   },
   {
@@ -22,10 +19,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Gurgaon",
     category: "Platform Leadership",
     description: [
-      "Led product and analytics when the product needed clearer metrics, stronger loops, and mechanics that felt more natural to eSports",
-      "Focused the roadmap around engagement, paying-user growth, and retention instead of feature volume",
-      "Stayed close enough to the product to shape the mechanics directly, not just manage the roadmap around them",
-      "Helped move the product away from static fantasy behaviour and closer to a live gameplay system"
+      "Led product and analytics while the product moved from static fantasy behavior toward live eSports mechanics."
     ]
   },
   {
@@ -35,10 +29,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "",
     category: "Systems & Scale",
     description: [
-      "Worked in products where trust depended as much on compliance, internal tools, and operating discipline as on customer-facing UX",
-      "Worked across money movement, enterprise SaaS, loyalty, internal tools, and booking funnels - different categories, but the same lesson: the hidden plumbing matters",
-      "Learned how large products actually break, and how much of the important work is invisible until it fails",
-      "Those years made me less impressed by polished screens and more interested in whether the system underneath could actually hold up"
+      "Worked across money movement, enterprise SaaS, loyalty, internal tools, and booking funnels where trust depended on the hidden parts holding up."
     ]
   },
   {
@@ -48,9 +39,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     location: "Mumbai",
     category: "Founder / Builder",
     description: [
-      "Built a seed-funded last-minute hotel platform at a stage where product, supply, operations, and customer experience were all tangled together",
-      "Scaled the supply side to 200+ hotels while staying close to the actual friction underneath the interface",
-      "Learned early that speed matters, but proximity to users and accountability to the business matter more"
+      "Built a seed-funded last-minute hotel platform where product, supply, operations, and customer experience were all tangled together."
     ]
   }
 ];

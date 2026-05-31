@@ -30,33 +30,25 @@ export const SITE_DATA = {
   ],
   howIWork: {
     headline: "Operating Principles",
-    subheading: "The habits I fall back on when the work is messy, the owner is unclear, and the first version still has to ship.",
+    subheading: "The few habits I keep coming back to when there is no neat brief yet.",
     principles: [
       {
         title: "Mechanism before interface",
-        description: "I don't trust a polished screen too early. A lot of product problems look like UI problems, but they are usually flow, incentive, data, or ownership problems showing up on the screen."
+        description: "I don't trust a polished screen too early. Most screen problems are flow, incentive, data, or ownership problems in disguise."
       },
       {
         title: "Ownership without performance",
-        description: "I don't wait for the org chart to become clean. If something needs framing, debugging, prototyping, or simply holding together for a while, I usually step in and make the next move clearer."
-      },
-      {
-        title: "Leverage over activity",
-        description: "I try to find the one change that makes everything after it easier: a better API contract, a clearer decision flow, a faster demo, or a recommendation engine that actually helps the user decide."
+        description: "I don't wait for the org chart to become clean. If something needs framing, debugging, or holding together for a while, I step in."
       },
       {
         title: "Respect the plumbing",
-        description: "In complex products, the boring plumbing is often the product. Docs, data structures, edge cases, partner constraints, and fallback logic may stay invisible, but users eventually feel every weak part."
+        description: "Docs, data structures, edge cases, partner constraints, and fallback logic may stay invisible, but users eventually feel every weak part."
       },
       {
         title: "Evidence, then taste",
-        description: "I like data, but product judgment is not only metrics. It also needs taste: what to simplify, where to be opinionated, what not to build, and when polish is just hiding confusion."
-      },
-      {
-        title: "Hold the signal",
-        description: "I'm usually the person trying to keep the original problem from getting distorted as it moves between founders, business, PMs, design, tech, ops, and senior stakeholders."
+        description: "Data matters, but product judgment also needs taste: what to simplify, where to be opinionated, and what not to build."
       }
     ],
-    closingLine: "I'm suspicious of anything that sounds solved before it has survived contact with reality."
+    closingLine: ""
   }
 };

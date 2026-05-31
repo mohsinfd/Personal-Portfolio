@@ -32,7 +32,6 @@ export interface SelectedWork {
   id: string;
   title: string;
   rootProblem: string;
-  productBelief: string;
   built: string[];
   whyItMattered: string;
   links?: CaseStudyLink[];
@@ -44,7 +43,6 @@ export interface GitHubProject {
   description: string;
   tech: string[];
   artifactType?: string;
-  whyExists?: string;
   repoUrl: string;
   cta: string;
 }

@@ -16,11 +16,11 @@ export const EngineeringDemos = () => {
               <Terminal className="w-5 h-5 text-zinc-400" />
               <span className="text-xs font-bold uppercase tracking-[0.28em] text-zinc-500">Artifacts</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Things I build so people can react to the idea</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6">Artifacts from the workbench</h2>
           </div>
           <div className="lg:pt-12">
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-              Public repos, prototypes, docs, and tools that made a product idea easier to test, explain, or operate. They are not here to decorate the portfolio. They are the rough working objects that helped move the product forward.
+              Public docs, prototypes, and tools that made an idea easier to test, explain, or operate.
             </p>
             <a
               href={SITE_DATA.github}
@@ -35,8 +35,8 @@ export const EngineeringDemos = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-white/10 border border-white/10">
           {visibleProjects.map((project) => (
-            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[360px]">
-              <div className="flex items-start justify-between gap-4 mb-8">
+            <article key={project.title} className="bg-zinc-950 p-6 md:p-7 flex flex-col min-h-[280px]">
+              <div className="flex items-start justify-between gap-4 mb-7">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 border border-white/10 rounded-md px-2.5 py-1.5">
                   {project.artifactType}
                 </span>
@@ -53,10 +53,6 @@ export const EngineeringDemos = () => {
               <p className="text-sm text-zinc-400 leading-relaxed mb-7">{project.description}</p>
 
               <div className="mt-auto">
-                <div className="border-t border-white/10 pt-5 mb-6">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-600 mb-3">Why this exists</p>
-                  <p className="text-sm text-zinc-300 leading-relaxed">{project.whyExists}</p>
-                </div>
                 <a
                   href={project.repoUrl}
                   target="_blank"

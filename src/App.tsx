@@ -73,8 +73,8 @@ const ResumeSection = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <SectionHeader 
             icon={FileText}
-            title="Full Resume" 
-            subtitle="Plain-text version for quick review, sharing, and recruiter workflows."
+            title="Resume" 
+            subtitle="Snapshot first. Full text is still available when needed."
           />
           <div className="flex gap-3 md:mb-10">
             <button 
@@ -104,10 +104,17 @@ const ResumeSection = () => {
             </div>
           ))}
         </div>
-        <Card className="bg-white dark:bg-zinc-950 p-8 border-dashed dark:border-zinc-800">
-          <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[600px] overflow-y-auto scrollbar-hide">
-            {RESUME_TXT}
-          </pre>
+        <Card className="bg-white dark:bg-zinc-950 p-0 border-dashed dark:border-zinc-800 overflow-hidden">
+          <details>
+            <summary className="cursor-pointer px-6 py-5 text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+              Show plain-text resume
+            </summary>
+            <div className="border-t border-zinc-200 dark:border-zinc-800 p-6">
+              <pre className="whitespace-pre-wrap font-mono text-sm text-zinc-700 dark:text-zinc-400 leading-6 max-h-[520px] overflow-y-auto scrollbar-hide">
+                {RESUME_TXT}
+              </pre>
+            </div>
+          </details>
         </Card>
       </div>
     </section>

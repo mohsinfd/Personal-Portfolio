@@ -13,14 +13,6 @@ const getCardVisuals = (id: string) => {
   }
 };
 
-const problemTypes = [
-  'unclear user decisions',
-  'weak plumbing under polished screens',
-  'partner and API constraints',
-  'teams needing structure before certainty',
-  'places where UX, GTM, and operations are tangled together'
-];
-
 export const SelectedWorkSection = () => (
   <section id="work" className="py-24 bg-white dark:bg-zinc-950 transition-colors relative">
     <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -28,21 +20,8 @@ export const SelectedWorkSection = () => (
         <SectionHeader
           icon={Briefcase}
           title="Selected Work"
-          subtitle="A few environments where the useful work was not just making screens better, but fixing what sat underneath."
+          subtitle="Four places where the work became real: fintech, gaming, scale, and founder work."
         />
-      </div>
-
-      <div className="mb-14 border-y border-zinc-200 dark:border-zinc-800 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6">
-          <h3 className="text-sm font-bold uppercase tracking-[0.22em] text-zinc-400 dark:text-zinc-500">Recurring problems</h3>
-          <div className="flex flex-wrap gap-2">
-            {problemTypes.map((problem) => (
-              <span key={problem} className="px-3 py-1.5 rounded-md bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-600 dark:text-zinc-400">
-                {problem}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className="space-y-5">
@@ -87,22 +66,14 @@ export const SelectedWorkSection = () => (
               </div>
 
               <div className="p-6 lg:p-8">
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Context</p>
-                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">{cs.rootProblem}</p>
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Product Belief</p>
-                    <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200 font-serif italic">"{cs.productBelief}"</p>
-                  </div>
-                </div>
-
-                <div className="mt-8 grid grid-cols-1 xl:grid-cols-[1fr_0.85fr] gap-8">
+                <p className="text-base leading-relaxed text-zinc-700 dark:text-zinc-300 max-w-2xl">
+                  {cs.rootProblem}
+                </p>
+                <div className="mt-7 grid grid-cols-1 xl:grid-cols-[1fr_0.8fr] gap-8">
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">What changed</p>
                     <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
-                      {cs.built?.map((item) => (
+                      {cs.built?.slice(0, 4).map((item) => (
                         <li key={item} className="flex gap-2.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                           <span className="mt-2 h-1 w-1 rounded-full bg-zinc-400 dark:bg-zinc-600 flex-shrink-0" />
                           <span>{item}</span>
@@ -111,7 +82,7 @@ export const SelectedWorkSection = () => (
                     </ul>
                   </div>
                   <div className="bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg p-5">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Why it mattered</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">Why it matters</p>
                     <p className="text-sm leading-relaxed font-medium text-zinc-800 dark:text-zinc-200">{cs.whyItMattered}</p>
                   </div>
                 </div>
